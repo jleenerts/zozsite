@@ -1,4 +1,5 @@
-<!-- taken from https://nextjs.org/learn/react-foundations/getting-started-with-react -->
+<!-- written with the guide at https://nextjs.org/learn/react-foundations/ -->
+<!-- modified by Jacob Leenerts for self educational purposes May 2025 -->
 
 <html>
   <body>
@@ -8,9 +9,40 @@
     <!-- Babel Script -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script type="text/jsx">
-      const domNode = document.getElementById('app');
-      const root = ReactDOM.createRoot(domNode);
-      root.render(<h1>Develop. Preview. Ship.</h1>);
+      const app = document.getElementById("app");
+    
+      function Header({ title }) {
+        console.log(title);
+        
+        return (
+           // JSX syntax allowing us to use JS variables as HTML attributes
+           // any JS expression (single value) can be used inside curly braces
+           // all 3 below are valid ( see https://nextjs.org/learn/react-foundations/displaying-data-with-props for more)
+          <h1>{title}</h1>
+          //<h1>{`Cool ${title}`}</h1>
+          //<h1>{props.title}</h1>
+          // this one above requires passing in 'props' not the template literal
+        );
+      }
+      function HomePage() {
+        const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
+
+        return (
+          <div>
+            <Header title="Develop. Preview. Ship." />
+            <ul>
+              {names.map((name) => (
+                <li key={name}>
+                  {name}
+                </li>
+              ))}
+            </ul>
+          </div>
+        );
+      }
+    
+      const root = ReactDOM.createRoot(app);
+      root.render(<HomePage />);
     </script>
   </body>
 </html>
