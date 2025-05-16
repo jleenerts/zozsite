@@ -1,6 +1,7 @@
 <!-- written with the guide at https://nextjs.org/learn/react-foundations/ -->
 <!-- modified by Jacob Leenerts for self educational purposes May 2025 -->
 
+<!-- also useful https://react.dev/learn/writing-markup-with-jsx#the-rules-of-jsx -->
 <html>
   <body>
     <div id="app"></div>
@@ -12,13 +13,13 @@
       const app = document.getElementById("app");
     
       function Header({ title }) {
-        console.log(title);
-        
         return (
            // JSX syntax allowing us to use JS variables as HTML attributes
            // any JS expression (single value) can be used inside curly braces
-           // all 3 below are valid ( see https://nextjs.org/learn/react-foundations/displaying-data-with-props for more)
-          <h1>{title}</h1>
+           // all below are valid ( see https://nextjs.org/learn/react-foundations/displaying-data-with-props for more)
+          
+          //<h1>{title}</h1>
+          <h1>{title ? title : "Default title"}</h1>
           //<h1>{`Cool ${title}`}</h1>
           //<h1>{props.title}</h1>
           // this one above requires passing in 'props' not the template literal
@@ -26,6 +27,13 @@
       }
       function HomePage() {
         const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
+
+        // create React state to store the number of likes and initialize to zero
+        const [likes, setLikes] = React.useState(0);
+
+        function handleClick() {
+          setLikes(likes + 1);
+        }
 
         return (
           <div>
@@ -37,6 +45,7 @@
                 </li>
               ))}
             </ul>
+            <button onClick={handleClick}>Like({likes})</button>
           </div>
         );
       }
