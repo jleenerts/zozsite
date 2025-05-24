@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-export function LikeButton() {
+export function LikeButton({ className }: { className?: string }) {
      const [likes, setLikes] = useState(0);
 
      function handleClick() {
@@ -10,6 +10,6 @@ export function LikeButton() {
      }
      
      return (
-     <button onClick={handleClick}>Like({likes})</button>
+     <button onClick={handleClick} className={className}>Fake Likes ({likes})</button>
      );
 }

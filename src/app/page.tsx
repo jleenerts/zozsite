@@ -29,7 +29,7 @@ export default function HomePage() {
           </li>
         ))}
       </ul>
-      <LikeButton />
+      <LikeButton className={`buttons`}/>
     </div>
   );
 }
