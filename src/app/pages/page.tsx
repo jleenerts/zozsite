@@ -13,13 +13,18 @@ export default function Page() {
   const pages = ['p1', 'p2', 'p3'];
 
   return (
-    <main className={`${sy.pages}`}>
-      <div className={`${sy.pages}`}>
-        <a className="buttons">Check out my work!</a>
+    <main className={`${sy.pages} inline-block container`}>
+      <div>
+        <a className={`buttons inline-block ${sy.elm}`}>Check out my work! (WIP page)</a>
       </div>
-      <div className={`${sy.pages}`}>
+      <div className={`flex ${sy.elm}`}>
         {pages.map((page) => (
-          <Link key={page} className={`${sy.buttons}`} href={`./${page}`}>{page}</Link>
+          <Link
+              key={page}
+              className={`${sy.buttons} inline-block`}
+              href={`./${page}`}>
+              {page}
+          </Link>
         ))}
       </div>
     </main>
