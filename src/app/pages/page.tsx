@@ -9,23 +9,17 @@ type HeaderProps = {
   title: string;
 };
 
-function Header({ title }: HeaderProps) {
-  return (
-    <h1>{title}</h1>
-  );
-}
-
 export default function Page() {
   const pages = ['p1', 'p2', 'p3'];
 
   return (
-    <main className={styles.pages}>
-      <Header title="Check out my work! (WIP)" />
-      <div className="container mx-auto">
+    <main className={`${sy.pages}`}>
+      <div className={`${sy.pages}`}>
+        <a className="buttons">Check out my work!</a>
+      </div>
+      <div className={`${sy.pages}`}>
         {pages.map((page) => (
-          <button key={page} className={`${styles.buttons} px-4`}>
-            <Link href={`./${page}`}>{page}</Link>
-          </button>
+          <Link key={page} className={`${sy.buttons}`} href={`./${page}`}>{page}</Link>
         ))}
       </div>
     </main>
