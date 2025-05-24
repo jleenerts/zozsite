@@ -1,5 +1,6 @@
 // Created by Jacob Leenerts May 2025
 
+import Link from "next/link";
 // don't forget to import user functions if applicable
 //import { Func } from "./user";
 
@@ -13,7 +14,7 @@ function Header({ title }: HeaderProps) {
   );
 }
 
-export default function HomePage() {
+export default function Page() {
   const pages = ['p1', 'p2', 'p3'];
 
   return (
@@ -21,9 +22,7 @@ export default function HomePage() {
       <Header title="Check out my work! (WIP)" />
       {pages.map((page) => (
           <p key={page}>
-            <a href={`./${page}`}>
-              {page}
-            </a>
+            <Link href={`./${page}`}>{page}</Link>
           </p>
         ))}
     </div>
