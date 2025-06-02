@@ -1,6 +1,7 @@
 // Created by Jacob Leenerts May 2025
 
 import Link from "next/link";
+import { MyPath } from "./user";
 import styles from "./pages.module.css";
 // we can't rename styles for the css import so we just create a new variable
 let sy = styles;
@@ -19,12 +20,7 @@ export default function Page() {
       </div>
       <div className={`flex ${sy.elm}`}>
         {pages.map((page) => (
-          <Link
-              key={page}
-              className={`${sy.buttons} inline-block`}
-              href={`./${page}`}>
-              {page}
-          </Link>
+          <MyPath key={page} className={'buttons'} title={page}></MyPath>
         ))}
       </div>
     </main>
