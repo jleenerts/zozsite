@@ -1,7 +1,10 @@
 // Created by Jacob Leenerts May 2025
 
+// this import is for a node module
 import Link from "next/link";
-import { MyPath } from "./user";
+// this import is for a library module
+import { LinkSubDir } from "@/lib/usrLib";
+// these imports is for a local module
 import styles from "./pages.module.css";
 // we can't rename styles for the css import so we just create a new variable
 let sy = styles;
@@ -20,7 +23,7 @@ export default function Page() {
       </div>
       <div className={`flex ${sy.elm}`}>
         {pages.map((page) => (
-          <MyPath key={page} className={'buttons'} title={page}></MyPath>
+          <LinkSubDir key={page} className={`buttons ${sy.elm}`} title={page}></LinkSubDir>
         ))}
       </div>
     </main>

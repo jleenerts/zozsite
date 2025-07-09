@@ -1,8 +1,14 @@
 'use client';
 
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
-export function getCurrentPath() {
+// This component is used to create a link to the current directory with the given subdirectory.
+export function LinkSubDir(props: { className?: string; title?: string }) {
   const currPath = usePathname();
-  return currPath;
+  return (
+          <Link href={`${currPath}/${props.title}`} className={props.className}>
+               {props.title ? props.title : "MISSING LINK"}
+          </Link>
+     );
 }
