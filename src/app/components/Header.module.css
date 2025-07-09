@@ -1,16 +1,6 @@
-:root {
+.header {
   --header-bg: #c9c9c9;
   --header-fg: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --header-bg: #3b3b3b;
-    --header-fg: #c9c9c9;
-  }
-}
-
-.header {
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -18,6 +8,13 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+}
+
+@media (prefers-color-scheme: dark) {
+  .header {
+    --header-bg: #3b3b3b;
+    --header-fg: #c9c9c9;
+  }
 }
 
 .container {
