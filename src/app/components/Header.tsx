@@ -2,7 +2,10 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import styles from "./Header.module.css";
+
+import ColorButton from "./colorTheme";
+
+import styles from "./Header.module.css"; 
 
 export default function Header() {
   const pathname = usePathname();
@@ -23,19 +26,23 @@ export default function Header() {
           </Link>
         </div>
         
-        <nav className={styles.nav}>
-          {navItems.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className={`${styles.navLink} ${
-                pathname === item.href ? styles.active : ""
-              }`}
-            >
-              {item.label}
-            </Link>
-          ))}
-        </nav>
+        <span>
+          <nav className={styles.nav}>
+            {navItems.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className={`${styles.navLink} ${
+                  pathname === item.href ? styles.active : ""
+                }`}
+              >
+                {item.label}
+              </Link>
+            ))}
+          </nav>
+
+          <ColorButton />
+        </span>
       </div>
     </header>
   );

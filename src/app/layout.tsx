@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+
 import "./globals.css";
 import Header from "./components/Header";
 
@@ -44,13 +45,25 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  var isDark = "light";
+  // only run on client
+  if (typeof window !== "undefined") {
+    window.addEventListener("storage", () => {
+    isDark = localStorage.theme;
+  });
+  }
   return (
     <html lang="en">
+      <head>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        data-theme={`${isDark}`}
       >
         <Header />
-        <main>
+        <main className="mx-auto min-h-full flex flex-col 
+              xl:max-w-3/5 xl:min-w-lg px-3 whitespace-pre-line
+              dark:bg-black dark:text-white">
           {children}
         </main>
       </body>
