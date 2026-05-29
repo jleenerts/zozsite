@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 
 import "./globals.css";
 import Header from "./components/Header";
@@ -40,26 +41,36 @@ export const metadata: Metadata = {
   },
 };
 
+
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  var isDark = "light";
-  // only run on client
-  if (typeof window !== "undefined") {
-    window.addEventListener("storage", () => {
-    isDark = localStorage.theme;
-  });
-  }
   return (
     <html lang="en">
-      <head>
-      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        data-theme={`${isDark}`}
       >
+        <Script strategy="afterInteractive">
+          {`
+          // localStorage initialization code
+          if (typeof window !== "undefined") {
+            document.body.classList.add("dark");
+            // create localStorage item if it doesn't exist
+            if (!localStorage.getItem("isDark")) {
+              if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                localStorage.setItem("isDark", "true");
+              }
+              else {
+                localStorage.setItem("isDark", "false");
+              }
+            }
+            // and toggle dark theme if browser doesn't prefer dark
+            document.body.classList.toggle("dark");
+          }`}
+        </Script>
         <Header />
         <main className="mx-auto min-h-full flex flex-col 
               xl:max-w-3/5 xl:min-w-lg px-3 whitespace-pre-line
