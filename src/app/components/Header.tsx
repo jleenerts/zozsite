@@ -7,22 +7,22 @@ import styles from "./Header.module.css";
 
 // toggle the site dark mode
 export function ColorButton() {
-    // info about system theme https://tailwindcss.com/docs/dark-mode
-    function handleClick() {
-        if (localStorage.getItem("isDark") === "true") {
-            localStorage.setItem("isDark", "false");
-            document.body.classList.remove("dark");
-        }
-        else {
-            localStorage.setItem("isDark", "true");
-            document.body.classList.add("dark");
-        }
+  // info about system theme https://tailwindcss.com/docs/dark-mode
+  function handleClick() {
+    if (localStorage.getItem("isDark") === "true") {
+      localStorage.setItem("isDark", "false");
+      document.body.classList.remove("dark");
     }
-    
-    return (
-        <button onClick={handleClick} className="border rounded-md bg-gray-200 dark:bg-gray-700">
-        Toggle Dark Mode</button>
-    );
+    else {
+      localStorage.setItem("isDark", "true");
+      document.body.classList.add("dark");
+    }
+  }
+  
+  return (
+    <button onClick={handleClick} className="border rounded-md bg-gray-200 dark:bg-gray-700">
+    Toggle Dark Mode</button>
+  );
 }
 
 export default function Header() {
@@ -36,8 +36,8 @@ export default function Header() {
   ];
 
   return (
-    <header className={styles.header}>
-      <div className={styles.container}>
+    <div className="fixed left-0 flex flex-col h-screen w-2xl px-3 py-4 md:px-2">
+      <div className="flex flex-col md:flex-row">
         <div className={styles.logo}>
           <Link href="/" className={styles.logoLink}>
             Jacob's React Site
@@ -45,7 +45,7 @@ export default function Header() {
         </div>
         
         <span>
-          <nav className={styles.nav}>
+          <nav className="flex flex-col md:flex-row">
             {navItems.map((item) => (
               <Link
                 key={item.href}
@@ -58,10 +58,9 @@ export default function Header() {
               </Link>
             ))}
           </nav>
-
-          <ColorButton />
         </span>
+        <ColorButton />
       </div>
-    </header>
+    </div>
   );
 }
