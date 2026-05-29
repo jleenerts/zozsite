@@ -50,14 +50,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <Script strategy="afterInteractive">
+      <head>
+        <Script strategy="beforeInteractive">
           {`
           // localStorage initialization code
           if (typeof window !== "undefined") {
-            document.body.classList.add("dark");
             // create localStorage item if it doesn't exist
             if (!localStorage.getItem("isDark")) {
               if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
@@ -67,14 +64,22 @@ export default function RootLayout({
                 localStorage.setItem("isDark", "false");
               }
             }
-            // and toggle dark theme if browser doesn't prefer dark
-            document.body.classList.toggle("dark");
+            
+            // and finally set initial dark state if applicable
+            if (localStorage.getItem("isDark") === "true") {
+              document.body.classList.add("dark");
+            }
           }`}
         </Script>
+      </head>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased dark:bg-black dark:text-gray-300`}
+        suppressHydrationWarning
+      >
         <Header />
         <main className="mx-auto min-h-full flex flex-col 
               xl:max-w-3/5 xl:min-w-lg px-3 whitespace-pre-line
-              dark:bg-black dark:text-white">
+              ">
           {children}
         </main>
       </body>

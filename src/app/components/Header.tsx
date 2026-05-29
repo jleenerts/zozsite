@@ -3,9 +3,27 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-import ColorButton from "./colorTheme";
-
 import styles from "./Header.module.css"; 
+
+// toggle the site dark mode
+export function ColorButton() {
+    // info about system theme https://tailwindcss.com/docs/dark-mode
+    function handleClick() {
+        if (localStorage.getItem("isDark") === "true") {
+            localStorage.setItem("isDark", "false");
+            document.body.classList.remove("dark");
+        }
+        else {
+            localStorage.setItem("isDark", "true");
+            document.body.classList.add("dark");
+        }
+    }
+    
+    return (
+        <button onClick={handleClick} className="border rounded-md bg-gray-200 dark:bg-gray-700">
+        Toggle Dark Mode</button>
+    );
+}
 
 export default function Header() {
   const pathname = usePathname();
