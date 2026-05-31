@@ -46,16 +46,17 @@ export default function Header() {
           
           <div className="bg-gray-400 mr-1 rounded-r-md hover:text-orange-500 hover:duration-150">
             <Link href="/about" replace
-                  className="grid grid-flow-col justify-items-end pr-2">
-              <Image
-                src="/zoz-logo-big.png"
-                height={1024}
-                width={1024}
-                objectPosition="relative"
-                alt="Logo designed by Zoz, a circular and stylized orange capital Z against a black background."
-                className="w-10 justify-right"
-              />
-              <div className="place-content-center font-semibold text-right">Jacob's Site</div>
+                  className="flex justify-end pr-2">
+              <div className="w-fill">
+                <Image
+                  src="/zoz-logo-big.png"
+                  height={1024}
+                  width={1024}
+                  alt="Logo designed by Zoz, a circular and stylized orange capital Z against a black background."
+                  className="w-10"
+                />
+              </div>
+              <div className="pl-2 place-content-center font-semibold">Jacob's Site</div>
             </Link>
           </div>
           
@@ -76,7 +77,7 @@ export default function Header() {
         
       </div>
       <div className={`basis-4 bg-linear-to-r from-gray-500 to-white dark:to-black`}></div>
-      <ColorButton className="p-3 bg-gray-500 absolute bottom-2 right-3"/>
+      <ColorButton className="cursor-pointer p-3 bg-gray-500 absolute bottom-2 right-3"/>
     </div>
   );
 }
