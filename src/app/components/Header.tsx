@@ -3,8 +3,6 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-import styles from "./Header.module.css";
-
 // toggle the site dark mode
 export function ColorButton({ className }: { className?: string }) {
   // info about system theme https://tailwindcss.com/docs/dark-mode
@@ -36,14 +34,10 @@ export default function Header() {
   ];
 
   return (
-    <div>
-      <div className={`fixed left-0
-                      h-screen w-1/5 min-w-3xs py-2
-                      ${styles.border_gradient}`}></div>
-      <div className={`fixed left-0
-                      h-screen w-1/10 min-w-3xs py-2
-                      text-right bg-gray-500
-                      `}>
+    <div className="fixed left-0
+                    h-screen max-w-1/10 min-w-3xs
+                    flex">
+      <div className={`basis-96 py-2 text-right bg-gray-500`}>
         <div className="flex flex-col gap-2 [&>*]:gap-2">
           
           <div className="bg-gray-400 mr-2 rounded-r-md">
@@ -65,10 +59,11 @@ export default function Header() {
           </nav>
 
         </div>
-        <ColorButton className="border rounded-md bg-gray-200 dark:bg-gray-700 absolute bottom-2 right-2"/>
+        
         
       </div>
-      
+      <div className={`basis-4 bg-linear-to-r from-gray-500 to-white/100`}></div>
+      <ColorButton className="border rounded-md bg-gray-200 dark:bg-gray-700 absolute bottom-2 right-3"/>
     </div>
   );
 }

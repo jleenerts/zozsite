@@ -1,5 +1,5 @@
 /*
-custom gradient for the border
+no longer used, switched to tailwind CSS for styling
 */
 
 .border_gradient {
@@ -12,10 +12,6 @@ custom gradient for the border
   background:
     linear-gradient(to left, #000000, #5e5e5e) right/11px 100% no-repeat;
 }
-
-/*
-no longer used, switched to tailwind CSS for styling
-*/
 
 .header {
   --header-bg: #c9c9c9;
