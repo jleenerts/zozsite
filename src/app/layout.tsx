@@ -77,8 +77,8 @@ export default function RootLayout({
         suppressHydrationWarning
       >
         <Header />
-        <main className="min-h-full
-              xl:max-w-3/5 xl:min-w-lg px-1 whitespace-pre-line
+        <main className="
+              mx-auto min-h-full flex flex-col lg:max-w-1/2 lg:min-w-md px-3 whitespace-pre-line
               ">
           {children}
         </main>

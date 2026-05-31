@@ -1,6 +1,6 @@
 export default function AboutPage() {
   return (
-     <div style={{ padding: '2rem', maxWidth: '800px', margin: '0 auto' }}>
+     <div className="">
           <h1>About Zoz Site</h1>
           <p>
                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam elementum blandit tempus. Pellentesque nec gravida lacus. Sed aliquam id nisl sed pellentesque. Sed vitae nulla quis odio feugiat venenatis et nec lectus. Mauris quam felis, efficitur consequat justo vel, commodo sodales urna. Pellentesque commodo accumsan neque, at bibendum elit. Pellentesque tincidunt pellentesque gravida. Nunc nisi sem, elementum ut velit at, eleifend accumsan purus. Sed feugiat tortor in consequat sodales. Morbi et ante ullamcorper, interdum ante in, sagittis felis. Integer est felis, scelerisque nec laoreet vitae, maximus sit amet augue. Aenean interdum tempor rhoncus. Etiam nec lectus vulputate, gravida elit non, tristique nisi.
