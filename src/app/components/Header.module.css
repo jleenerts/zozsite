@@ -1,4 +1,19 @@
 /*
+custom gradient for the border
+*/
+
+.border_gradient {
+  background:
+    linear-gradient(to left, #ffffff, #5e5e5e) right/11px 100% no-repeat;
+}
+
+
+:global(.dark) .border_gradient {
+  background:
+    linear-gradient(to left, #000000, #5e5e5e) right/11px 100% no-repeat;
+}
+
+/*
 no longer used, switched to tailwind CSS for styling
 */
 

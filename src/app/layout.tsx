@@ -73,12 +73,12 @@ export default function RootLayout({
         </Script>
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased dark:bg-black dark:text-gray-300`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased dark:bg-black dark:text-gray-200`}
         suppressHydrationWarning
       >
         <Header />
         <main className="
-              mx-auto min-h-full flex flex-col lg:max-w-1/2 lg:min-w-md px-3 whitespace-pre-line
+              mx-auto flex flex-col lg:max-w-1/2 lg:min-w-md px-3 whitespace-pre-line
               ">
           {children}
         </main>
