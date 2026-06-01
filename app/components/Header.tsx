@@ -27,15 +27,51 @@ export function ColorButton({ className }: { className?: string }) {
   );
 }
 
-export function ToggleSidebarButton({ className }: { className?: string }) {
-  const sidebar = document.getElementById('sidebar');
+export function ToggleSidebarButton({ className, id }: { className?: string, id?: string }) {
+  var active = false;
+  var sidebar: HTMLElement | null = null;
+  var button: HTMLElement | null = null;
+
+  if (typeof window !== "undefined") {
+    sidebar = document?.getElementById('sidebar');
+    button = document?.getElementById('sidebarButton');
+
+    console.log(button?.classList);
+    button?.classList.add("rounded-md");
+
+    if (localStorage.getItem("isDark") == "true") {
+      button?.classList.add("text-gray-200");
+      button?.classList.remove("text-black");
+    }
+  }
 
   function toggleSidebar() {
+    active = !active;
     sidebar?.classList.toggle('-translate-x-full');
+
+    // add transparent border to sandwich icon if sidebar isn't active
+    if (!active) {
+      button?.classList.add("bg-black/50");
+      button?.classList.add("dark:bg-white/50");
+    }
+    else {
+      button?.classList.remove("dark:bg-white/50");
+      button?.classList.remove("bg-black/50");
+    }
+
+    // change color of icon ONLY if dark and not active
+    if (!active && localStorage.getItem("isDark") === "true") {
+      button?.classList.add("text-gray-200");
+      button?.classList.remove("text-black");
+    }
+    else {
+      button?.classList.add("text-black");
+      button?.classList.remove("text-gray-200");
+    }
   }
 
   return (
-    <button onClick={toggleSidebar} className={className}>
+    <button onClick={toggleSidebar} id="sidebarButton" className={className} suppressHydrationWarning>
       <Bars3Icon className=""/>
     </button>
   );
@@ -53,12 +89,11 @@ export default function Header() {
 
   return (
     <aside>
-      
       <div id="sidebar"
            className="fixed left-0
                       h-screen max-w-1/10 min-w-3xs
                       flex
-                      transition-all duration-300 ease-in-out transform"
+                      transition-all duration-300 ease-in-out transform -translate-x-full"
       >
         <div 
           className="basis-96 py-2
@@ -110,12 +145,15 @@ export default function Header() {
           className="basis-4 bg-linear-to-r from-gray-500 to-white dark:to-black"
         />
         
-        <ColorButton className="absolute bottom-2 right-3 p-3 w-18
-                                cursor-pointer dark:text-black not-dark:text-yellow-100 duration-80"/>
+        <ColorButton
+          className="absolute bottom-2 right-3 p-2 w-16
+                     cursor-pointer text-yellow-100 dark:text-black duration-80"/>
       </div>
       <ToggleSidebarButton
-        className="absolute top-2 left-2 w-10
-                   cursor-pointer text-black "
+        className="fixed top-2 left-2 w-10
+                   cursor-pointer text-black
+                   rounded-md bg-black/50 dark:bg-white/50
+                   duration-100"
       />
     </aside>
   );
