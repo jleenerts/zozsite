@@ -95,12 +95,10 @@ export default function Header() {
                      text-right bg-gray-600"
         >  
           <div 
-            className="flex flex-col gap-2 [&>*]:gap-2"
+            className="flex flex-col gap-2 [&>*]:gap-4"
           >
-            
             <div
-              className="mr-1
-                         hover:text-orange-500 hover:duration-150"
+              className="mr-1"
             >
               <Link href="/about"
                     className="flex justify-end pr-2"
@@ -114,7 +112,10 @@ export default function Header() {
                     className="w-10"
                   />
                 </div>
-                <div className="pl-2 place-content-center font-semibold">Jacob's Site</div>
+                <div className="pl-2 place-content-center
+                                font-semibold text-gray-100
+                                hover:text-orange-500 hover:duration-200"
+                >Jacob's Site</div>
               </Link>
             </div>
             
@@ -123,21 +124,19 @@ export default function Header() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`mr-1 pr-2
-                              bg-gray-400 rounded-r-md border-black
-                              hover:text-orange-500 hover:duration-150`}
+                  className={`mr-1 p-2
+                              bg-gray-400
+                              rounded-r-lg
+                              text-4xl hover:text-orange-500 hover:duration-150`}
                 >
                   {item.label}
                 </Link>
               ))}
             </nav>
-
           </div>
-          
-          
         </div>
         <div
-          className="basis-4 bg-linear-to-r from-gray-500 to-white dark:to-black mask-r-from-30%"
+          className="basis-4 bg-linear-to-r from-gray-600 to-white dark:to-black mask-r-from-30%"
         />
         <ColorButton
           className="absolute right-3 bottom-4 max-block-24

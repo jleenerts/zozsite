@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 body {
-  font-family: Geist, Arial, Helvetica, sans-serif;
+  font-family: Zen-Kaku-Gothic-New, Chakra-Petch, Blinker, Ubuntu-Mono, Arial, Helvetica, sans-serif;
   font-size: 20px;
 }
 
