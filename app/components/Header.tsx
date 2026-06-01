@@ -21,9 +21,7 @@ export function ColorButton({ className }: { className?: string }) {
   }
   
   return (
-    <button onClick={switchThemes} className={className}>
-      <LightBulbIcon className=""/>
-    </button>
+    <LightBulbIcon onClick={switchThemes} className={className}/>
   );
 }
 
@@ -35,9 +33,6 @@ export function ToggleSidebarButton({ className, id }: { className?: string, id?
   if (typeof window !== "undefined") {
     sidebar = document?.getElementById('sidebar');
     button = document?.getElementById('sidebarButton');
-
-    console.log(button?.classList);
-    button?.classList.add("rounded-md");
 
     if (localStorage.getItem("isDark") == "true") {
       button?.classList.add("text-gray-200");
@@ -91,13 +86,13 @@ export default function Header() {
     <aside>
       <div id="sidebar"
            className="fixed left-0
-                      h-screen max-w-1/10 min-w-3xs
+                      h-screen h-dvh min-w-xs
                       flex
                       transition-all duration-300 ease-in-out transform -translate-x-full"
       >
         <div 
           className="basis-96 py-2
-                     text-right bg-gray-500"
+                     text-right bg-gray-600"
         >  
           <div 
             className="flex flex-col gap-2 [&>*]:gap-2"
@@ -142,12 +137,12 @@ export default function Header() {
           
         </div>
         <div
-          className="basis-4 bg-linear-to-r from-gray-500 to-white dark:to-black"
+          className="basis-4 bg-linear-to-r from-gray-500 to-white dark:to-black mask-r-from-30%"
         />
-        
         <ColorButton
-          className="absolute bottom-2 right-3 p-2 w-16
-                     cursor-pointer text-yellow-100 dark:text-black duration-80"/>
+          className="absolute right-3 bottom-4 max-block-24
+                     cursor-pointer text-yellow-100 dark:text-black duration-80"
+        />
       </div>
       <ToggleSidebarButton
         className="fixed top-2 left-2 w-10
