@@ -78,7 +78,10 @@ export default function RootLayout({
       >
         <Header />
         <main className="
-              mx-auto flex flex-col lg:max-w-1/2 lg:min-w-md px-3 whitespace-pre-line
+              mx-auto flex flex-col
+              lg:max-w-1/2 lg:min-w-md px-3
+              whitespace-pre-line
+              duration-300
               ">
           {children}
         </main>
