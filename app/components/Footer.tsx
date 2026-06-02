@@ -2,10 +2,10 @@ import Link from "next/link";
 
 export default function Footer() {
     return (
-        <div className="mt-4 py-2 border-t-2 fixed w-screen bottom-0
-                        grid grid-cols-2 place-items-center
-                        text-sm lg:text-md 
-                        bg-gray-600"
+        <div className="mt-4 p-2 border-t-2 fixed w-screen bottom-0 z-05
+                        flex justify-between
+                        text-black text-sm lg:text-md 
+                        bg-orange-500"
         >
             <Link href="https://github.com/jleenerts/zozsite"
                   className="flex place-items-center">

@@ -87,7 +87,7 @@ export default function Header() {
   // I created a separate div to house the light. If set relative to the inside of the rest of the sidebar,
   // then it can either be cut off or not update position every time the viewport height changes.
   return (
-    <aside className={`${shareTech.className}`}>
+    <aside className="z-09">
       <div id="sidebar"
            className="fixed top-0 left-0
                       h-screen h-dvh min-w-xs
@@ -117,9 +117,9 @@ export default function Header() {
                   />
                 </div>
                 <div className="pl-2 place-content-center
-                                font-semibold text-gray-100
-                                hover:text-orange-500 hover:duration-200"
-                >Jacob's Site</div>
+                                font-semibold text-orange-500
+                                hover:text-amber-600 hover:duration-200"
+                >Home of Zoz</div>
               </Link>
             </div>
             
@@ -128,10 +128,11 @@ export default function Header() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`mr-1 p-2
+                  className={`my-1 mr-2 px-1 pr-2
                               bg-gray-400
-                              rounded-r-lg
-                              text-4xl hover:text-orange-500 hover:duration-150`}
+                              rounded-r-2xl border border-gray-400 hover:border-orange-500
+                              ${shareTech.className}
+                              text-4xl text-black hover:text-orange-500 hover:duration-150`}
                 >
                   {item.label}
                 </Link>
@@ -145,14 +146,14 @@ export default function Header() {
       </div>
       <div id="lightButton"
            className="flex justify-end
-                      fixed bottom-2 left-0 h-[50px] min-w-xs
+                      fixed bottom-12 left-0 h-[50px] min-w-xs 
                       transition-all duration-300 ease-in-out transform -translate-x-full">
         <ColorButton
-          className="pr-4 cursor-pointer text-yellow-100 dark:text-black duration-80"
+          className="pr-4 z-10 cursor-pointer text-yellow-100 dark:text-black duration-80"
         />
       </div>
       <ToggleSidebarButton
-        className="fixed top-2 left-2 w-10
+        className="fixed top-2 left-2 w-10 z-11
                    cursor-pointer text-black
                    rounded-md bg-black/50 dark:bg-white/50
                    duration-100"
