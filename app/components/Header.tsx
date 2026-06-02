@@ -5,6 +5,13 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 import { LightBulbIcon, Bars3Icon } from "@heroicons/react/24/outline";
+import { Share_Tech } from "next/font/google";
+
+const shareTech = Share_Tech({
+  variable: "--font-share-tech",
+  subsets: ["latin"],
+  weight: "400",
+});
 
 // toggle the site dark mode
 export function ColorButton({ className }: { className?: string }) {
@@ -83,7 +90,7 @@ export default function Header() {
   ];
 
   return (
-    <aside>
+    <aside className={`${shareTech.className}`}>
       <div id="sidebar"
            className="fixed left-0
                       h-screen h-dvh min-w-xs
