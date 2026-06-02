@@ -53,7 +53,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <Script strategy="beforeInteractive">
+        <Script strategy="afterInteractive">
           {`
           // localStorage initialization code
           if (typeof window !== "undefined") {
@@ -81,11 +81,11 @@ export default function RootLayout({
       >
         <Header />
         <main className="
-              mx-auto flex flex-col
-              lg:max-w-1/2 lg:min-w-md px-3 py-5vh
+              mx-auto  pt-[7vh]
+              flex flex-col lg:max-w-1/2 lg:min-w-md
               whitespace-pre-line
               duration-300
-              ">
+        ">
           {children}
         </main>
       </body>

@@ -32,7 +32,7 @@ export function ColorButton({ className }: { className?: string }) {
   );
 }
 
-export function ToggleSidebarButton({ className, id }: { className?: string, id?: string }) {
+export function ToggleSidebarButton({ className }: { className?: string }) {
   var active = false;
   var sidebar: HTMLElement | null = null;
   var button: HTMLElement | null = null;
@@ -40,6 +40,11 @@ export function ToggleSidebarButton({ className, id }: { className?: string, id?
   if (typeof window !== "undefined") {
     sidebar = document?.getElementById('sidebar');
     button = document?.getElementById('sidebarButton');
+
+    // reset sidebar being open on page change and enable button background
+    sidebar?.classList.add('-translate-x-full');
+    button?.classList.add("bg-black/50");
+    button?.classList.add("dark:bg-white/50");
 
     if (localStorage.getItem("isDark") == "true") {
       button?.classList.add("text-gray-200");
