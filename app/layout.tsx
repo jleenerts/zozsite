@@ -4,6 +4,7 @@ import Script from "next/script";
 
 import "./globals.css";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 const zenKaku = Zen_Kaku_Gothic_New({
   variable: "--font-zen-kaku-gothic-new",
@@ -79,15 +80,18 @@ export default function RootLayout({
                     antialiased dark:bg-black dark:text-gray-200`}
         suppressHydrationWarning
       >
-        <Header />
+        
         <main className="
-              mx-auto  pt-[7vh]
+              mx-auto pt-13 lg:pt-5 pb-12
               flex flex-col lg:max-w-1/2 lg:min-w-md
               whitespace-pre-line
               duration-300
         ">
           {children}
+          
         </main>
+        <Footer />
+        <Header />
       </body>
     </html>
   );

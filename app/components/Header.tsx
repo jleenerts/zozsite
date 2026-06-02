@@ -4,8 +4,10 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 
-import { LightBulbIcon, Bars3Icon } from "@heroicons/react/24/outline";
+import { Bars3Icon } from "@heroicons/react/24/outline";
 import { Share_Tech } from "next/font/google";
+
+import { ColorButton } from "./themeToggler";
 
 const shareTech = Share_Tech({
   variable: "--font-share-tech",
@@ -13,36 +15,20 @@ const shareTech = Share_Tech({
   weight: "400",
 });
 
-// toggle the site dark mode
-export function ColorButton({ className }: { className?: string }) {
-  // info about system theme https://tailwindcss.com/docs/dark-mode
-  function switchThemes() {
-    if (localStorage.getItem("isDark") === "true") {
-      localStorage.setItem("isDark", "false");
-      document.body.classList.remove("dark");
-    }
-    else {
-      localStorage.setItem("isDark", "true");
-      document.body.classList.add("dark");
-    }
-  }
-  
-  return (
-    <LightBulbIcon onClick={switchThemes} className={className}/>
-  );
-}
-
 export function ToggleSidebarButton({ className }: { className?: string }) {
   var active = false;
   var sidebar: HTMLElement | null = null;
+  var lightButton: HTMLElement | null = null;
   var button: HTMLElement | null = null;
 
   if (typeof window !== "undefined") {
     sidebar = document?.getElementById('sidebar');
+    lightButton = document?.getElementById('lightButton');
     button = document?.getElementById('sidebarButton');
 
     // reset sidebar being open on page change and enable button background
     sidebar?.classList.add('-translate-x-full');
+    lightButton?.classList.add('-translate-x-full');
     button?.classList.add("bg-black/50");
     button?.classList.add("dark:bg-white/50");
 
@@ -54,7 +40,10 @@ export function ToggleSidebarButton({ className }: { className?: string }) {
 
   function toggleSidebar() {
     active = !active;
+    console.log(sidebar);
+    console.log(lightButton);
     sidebar?.classList.toggle('-translate-x-full');
+    lightButton?.classList.toggle('-translate-x-full');
 
     // add transparent border to sandwich icon if sidebar isn't active
     if (!active) {
@@ -94,10 +83,13 @@ export default function Header() {
     // Add more navigation items as needed
   ];
 
+  // Note on the light icon: to match the bottom of a mobile browser where the height can change,
+  // I created a separate div to house the light. If set relative to the inside of the rest of the sidebar,
+  // then it can either be cut off or not update position every time the viewport height changes.
   return (
     <aside className={`${shareTech.className}`}>
       <div id="sidebar"
-           className="fixed left-0
+           className="fixed top-0 left-0
                       h-screen h-dvh min-w-xs
                       flex
                       transition-all duration-300 ease-in-out transform -translate-x-full"
@@ -150,9 +142,13 @@ export default function Header() {
         <div
           className="basis-4 bg-linear-to-r from-gray-600 to-white dark:to-black mask-r-from-30%"
         />
+      </div>
+      <div id="lightButton"
+           className="flex justify-end
+                      fixed bottom-2 left-0 h-[50px] min-w-xs
+                      transition-all duration-300 ease-in-out transform -translate-x-full">
         <ColorButton
-          className="absolute right-3 bottom-4 max-block-24
-                     cursor-pointer text-yellow-100 dark:text-black duration-80"
+          className="pr-4 cursor-pointer text-yellow-100 dark:text-black duration-80"
         />
       </div>
       <ToggleSidebarButton
