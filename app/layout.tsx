@@ -48,12 +48,32 @@ export default function RootLayout({
 }>) {
    
    return (
-      <html lang="en">
+      <html lang="en" className="dark" suppressHydrationWarning>
          <head>
+            <Script strategy="beforeInteractive">
+               {`
+               // localStorage initialization code
+               if (typeof window !== "undefined") {
+                  // create localStorage item if it doesn't exist
+                  if (!localStorage.getItem("isDark")) {
+                  if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                     localStorage.setItem("isDark", "true");
+                  }
+                  else {
+                     localStorage.setItem("isDark", "false");
+                  }
+                  }
+                  
+                  // and finally set initial dark state if applicable
+                  if (localStorage.getItem("isDark") === "false") {
+                  document.documentElement.classList.remove("dark");
+                  }
+               }`}
+            </Script>
          </head>
          <body
             className={`${goldman.className}
-                     antialiased dark:bg-black dark:text-gray-200 z-0`}
+                     antialiased h-dvh dark:bg-black dark:text-gray-200 z-0`}
             suppressHydrationWarning
          >
             <ThemeWrapper>
@@ -65,9 +85,9 @@ export default function RootLayout({
                ">
                   {children}
                </main>
-               <Header />
-               <Footer />
             </ThemeWrapper>
+            <Header />
+            <Footer />
          </body>
       </html>
    );

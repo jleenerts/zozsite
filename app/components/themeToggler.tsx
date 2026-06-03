@@ -8,11 +8,11 @@ export function ColorButton({ className }: { className?: string }) {
   function switchThemes() {
     if (localStorage.getItem("isDark") === "true") {
       localStorage.setItem("isDark", "false");
-      document.body.classList.remove("dark");
+      document.documentElement.classList.remove("dark");
     }
     else {
       localStorage.setItem("isDark", "true");
-      document.body.classList.add("dark");
+      document.documentElement.classList.add("dark");
     }
   }
   

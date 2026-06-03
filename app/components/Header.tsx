@@ -120,7 +120,7 @@ export default function Header() {
                      <Link
                         key={item.href}
                         href={item.href}
-                        prefetch={true}
+                        prefetch={false}
                         className={`my-1 mr-2 px-1 pr-2
                                     ${pathname === item.href ? 'bg-orange-500' : 'bg-gray-300'}
                                     rounded-r-2xl
