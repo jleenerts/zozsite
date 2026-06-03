@@ -6,6 +6,7 @@ import { Goldman } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import ThemeWrapper from "./components/themeWrapper";
 
 const goldman = Goldman({
    variable: "--font-goldman",
@@ -45,62 +46,28 @@ export default function RootLayout({
 }: Readonly<{
    children: React.ReactNode;
 }>) {
-   // localStorage initialization code
-   if (typeof window !== "undefined") {
-      // create localStorage item if it doesn't exist
-      if (!localStorage.getItem("isDark")) {
-         if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-            localStorage.setItem("isDark", "true");
-         }
-         else {
-            localStorage.setItem("isDark", "false");
-         }
-      }
-      
-      // and finally set initial dark state if applicable
-      if (localStorage.getItem("isDark") === "true") {
-         document.body.classList.add("dark");
-      }
-   }
+   
    return (
       <html lang="en">
          <head>
-            <Script strategy="afterInteractive">
-               {`
-               // localStorage initialization code
-               if (typeof window !== "undefined") {
-                  // create localStorage item if it doesn't exist
-                  if (!localStorage.getItem("isDark")) {
-                     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-                        localStorage.setItem("isDark", "true");
-                     }
-                     else {
-                        localStorage.setItem("isDark", "false");
-                     }
-                  }
-                  
-                  // and finally set initial dark state if applicable
-                  if (localStorage.getItem("isDark") === "true") {
-                     document.body.classList.add("dark");
-                  }
-               }`}
-            </Script>
          </head>
          <body
             className={`${goldman.className}
                      antialiased dark:bg-black dark:text-gray-200 z-0`}
             suppressHydrationWarning
          >
-            <main className="
-                  mx-auto portrait:mx-2 pt-12 lg:pt-5 pb-12 md:max-w-1/2 md:min-w-sm
-                  flex flex-col justify-center
-                  whitespace-pre-line
-                  duration-300
-            ">
-               {children}
-            </main>
-            <Header />
-            <Footer />
+            <ThemeWrapper>
+               <main className="
+                     mx-auto portrait:mx-2 pt-12 lg:pt-5 pb-12 md:max-w-1/2 md:min-w-sm
+                     flex flex-col justify-center
+                     whitespace-pre-line
+                     duration-300
+               ">
+                  {children}
+               </main>
+               <Header />
+               <Footer />
+            </ThemeWrapper>
          </body>
       </html>
    );

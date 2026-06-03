@@ -1,4 +1,5 @@
 'use client';
+
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -27,18 +28,18 @@ export default function HomePage() {
             className="landscape:h-3/5 portrait:w-4/5 w-min"
          />
          <Link href={`./about`}
-                  prefetch={true}
-                  className={`mt-4 text-4xl`}
-                  replace={true}
-                  onNavigate={(e) => {
-                     if (sidebar && footer) {
-                        sidebar.hidden = false;
-                        footer.hidden = false;
-                     }
-                  }}
-            >
-               Enter
-            </Link>
+               prefetch={true}
+               className={`mt-4 text-4xl`}
+               replace={true}
+               onNavigate={(e) => {
+                  if (sidebar && footer) {
+                     sidebar.hidden = false;
+                     footer.hidden = false;
+                  }
+               }}
+         >
+            Enter
+         </Link>
       </div>
    );
 }
