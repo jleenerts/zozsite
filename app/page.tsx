@@ -19,17 +19,16 @@ export default function HomePage() {
    });
 
    return (
-      <div className="h-screen flex flex-col items-center justify-center">
+      <div className="absolute inset-0 flex flex-col items-center justify-center">
          <Image src="/zoz-logo-big.png"
             height={1024}
             width={1024}
             alt="Logo designed by Zoz, a circular and stylized orange capital Z against a black background."
-            className="h-3/5 w-min"
+            className="landscape:h-3/5 portrait:w-4/5 w-min"
          />
-         <div>
-            <Link href={`./about`}
+         <Link href={`./about`}
                   prefetch={true}
-                  className={`text-4xl`}
+                  className={`mt-4 text-4xl`}
                   replace={true}
                   onNavigate={(e) => {
                      if (sidebar && footer) {
@@ -38,9 +37,8 @@ export default function HomePage() {
                      }
                   }}
             >
-               Click through
+               Enter
             </Link>
-         </div>
       </div>
    );
 }

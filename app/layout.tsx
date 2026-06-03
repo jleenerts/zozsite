@@ -1,16 +1,10 @@
 import type { Metadata } from "next";
-import { Goldman, Zen_Kaku_Gothic_New } from "next/font/google";
-import Script from "next/script";
+import { Goldman } from "next/font/google";
 
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
-const zenKaku = Zen_Kaku_Gothic_New({
-   variable: "--font-zen-kaku-gothic-new",
-   subsets: ["latin"],
-   weight: "500",
-});
 const goldman = Goldman({
    variable: "--font-goldman",
    subsets: ["latin"],
@@ -44,36 +38,31 @@ export const metadata: Metadata = {
    },
 };
 
-
-
 export default function RootLayout({
    children,
 }: Readonly<{
    children: React.ReactNode;
 }>) {
+   // localStorage initialization code
+   if (typeof window !== "undefined") {
+      // create localStorage item if it doesn't exist
+      if (!localStorage.getItem("isDark")) {
+         if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            localStorage.setItem("isDark", "true");
+         }
+         else {
+            localStorage.setItem("isDark", "false");
+         }
+      }
+      
+      // and finally set initial dark state if applicable
+      if (localStorage.getItem("isDark") === "true") {
+         document.body.classList.add("dark");
+      }
+   }
    return (
       <html lang="en">
          <head>
-            <Script strategy="afterInteractive">
-               {`
-               // localStorage initialization code
-               if (typeof window !== "undefined") {
-                  // create localStorage item if it doesn't exist
-                  if (!localStorage.getItem("isDark")) {
-                     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-                        localStorage.setItem("isDark", "true");
-                     }
-                     else {
-                        localStorage.setItem("isDark", "false");
-                     }
-                  }
-                  
-                  // and finally set initial dark state if applicable
-                  if (localStorage.getItem("isDark") === "true") {
-                     document.body.classList.add("dark");
-                  }
-               }`}
-            </Script>
          </head>
          <body
             className={`${goldman.className}
@@ -81,8 +70,8 @@ export default function RootLayout({
             suppressHydrationWarning
          >
             <main className="
-                  mx-auto pt-13 lg:pt-5 pb-12
-                  flex flex-col lg:max-w-1/2 lg:min-w-md
+                  mx-auto portrait:mx-2 pt-12 lg:pt-5 pb-12 md:max-w-1/2 md:min-w-sm
+                  flex flex-col justify-center
                   whitespace-pre-line
                   duration-300
             ">
