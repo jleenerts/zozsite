@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Script from "next/script";
+
 import { Goldman } from "next/font/google";
 
 import "./globals.css";
@@ -63,6 +65,26 @@ export default function RootLayout({
    return (
       <html lang="en">
          <head>
+            <Script strategy="afterInteractive">
+               {`
+               // localStorage initialization code
+               if (typeof window !== "undefined") {
+                  // create localStorage item if it doesn't exist
+                  if (!localStorage.getItem("isDark")) {
+                     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                        localStorage.setItem("isDark", "true");
+                     }
+                     else {
+                        localStorage.setItem("isDark", "false");
+                     }
+                  }
+                  
+                  // and finally set initial dark state if applicable
+                  if (localStorage.getItem("isDark") === "true") {
+                     document.body.classList.add("dark");
+                  }
+               }`}
+            </Script>
          </head>
          <body
             className={`${goldman.className}
