@@ -83,7 +83,7 @@ export default function Header() {
    // I created a separate div to house the light. If set relative to the inside of the rest of the sidebar,
    // then it can either be cut off or not update position every time the viewport height changes.
    return (
-      <aside id="header" className="z-09">
+      <aside id="sidebarContainer" className="z-09">
          <div id="sidebar"
             className="fixed top-0 left-0
                         h-screen h-dvh min-w-3xs lg:min-w-xs
@@ -106,8 +106,8 @@ export default function Header() {
                   >
                      <div>
                         <Image src="/zoz-logo-sm.png"
-                           height={1024}
-                           width={1024}
+                           height={256}
+                           width={256}
                            alt="Logo designed by Zoz, a circular and stylized orange capital Z against a black background."
                            className="w-10 pr-2"
                         />
