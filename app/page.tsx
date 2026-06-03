@@ -4,11 +4,11 @@
 import Link from "next/link";
 
 export default function HomePage() {
-  return (
-    <div>
+   return (
       <div>
-        <Link className={`buttons`} href={`./pages`}>Check out my apps!</Link>
+         <div>
+            <Link className={`buttons`} href={`./about`}>Check out my apps!</Link>
+         </div>
       </div>
-    </div>
-  );
+   );
 }
