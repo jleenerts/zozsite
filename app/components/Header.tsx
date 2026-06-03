@@ -75,10 +75,8 @@ export default function Header() {
    const pathname = usePathname();
 
    const navItems = [
-      { href: "/", label: "Home" },
-      { href: "/pages", label: "My Apps" },
-      { href: "/about", label: "About" },
-      // Add more navigation items as needed
+      { href: "/about", label: "About Me" },
+      { href: "/resume", label: "My Resume" },
    ];
 
    // Note on the light icon: to match the bottom of a mobile browser where the height can change,
@@ -97,39 +95,36 @@ export default function Header() {
                         text-right bg-gray-600"
          >  
             <div 
-               className="flex flex-col gap-2 [&>*]:gap-3"
+               className="flex flex-col gap-2 *:gap-3"
             >
                <div
                className="mr-1"
                >
                   <Link href="/about"
-                        className="flex justify-end pr-2"
+                        className="flex justify-end pr-2
+                                    font-semibold text-orange-500 hover:text-orange-400"
                   >
                      <div>
                         <Image src="/zoz-logo-sm.png"
                            height={1024}
                            width={1024}
                            alt="Logo designed by Zoz, a circular and stylized orange capital Z against a black background."
-                           className="w-10"
+                           className="w-10 pr-2"
                         />
                      </div>
-                     <p className="pl-2 place-content-center
-                                    font-semibold text-orange-500
-                                    hover:text-amber-600 hover:duration-200"
-                     >Home of Zoz</p>
+                     Home of Zoz
                   </Link>
                </div>
-               
                <nav className="flex flex-col">
                   {navItems.map((item) => (
                      <Link
-                        key={item.href} id={item.href}
+                        key={item.href}
                         href={item.href}
                         prefetch={true}
                         className={`my-1 mr-2 px-1 pr-2
-                                    ${pathname === item.href ? 'bg-gray-400' : 'bg-gray-300'}
-                                    rounded-r-2xl border border-gray-400
-                                    ${pathname !== item.href ? 'hover:border-orange-500 hover:text-orange-500' : ''}
+                                    ${pathname === item.href ? 'bg-orange-500' : 'bg-gray-300'}
+                                    rounded-r-2xl
+                                    hover:bg-orange-500
                                     ${shareTech.className}
                                     text-4xl text-black hover:duration-150`}
                         onNavigate={(e) => {
@@ -157,12 +152,14 @@ export default function Header() {
                className="pr-4 z-10 cursor-pointer text-yellow-100 dark:text-black duration-80"
             />
          </div>
-         <ToggleSidebarButton
-            className="fixed top-2 left-2 w-10 z-11
-                        cursor-pointer text-black
-                        rounded-md bg-black/50 dark:bg-white/50
-                        duration-100"
-         />
+         <div className="fixed top-1 left-2 h-10 w-10 lg:w-25 z-11">
+            <ToggleSidebarButton
+               className="size-10
+                           cursor-pointer text-black
+                           rounded-md bg-black/50 dark:bg-white/50
+                           duration-100"
+            />
+         </div>
       </aside>
    );
 }
