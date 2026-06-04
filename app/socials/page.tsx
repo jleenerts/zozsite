@@ -10,14 +10,14 @@ export default function SocialsPage() {
    return (
       <div className="absolute inset-0 flex flex-col h-full
                         items-center justify-center-safe
-                        text-4xl *:w-3xs *:p-2 *:my-2
-                        *:bg-gray-200 *:dark:bg-gray-700 *:rounded-md">
+                        text-4xl *:w-2xs *:p-3 *:py-4 *:my-2
+                        *:bg-gray-300 *:dark:bg-gray-500 *:rounded-md">
          <Link href="https://steamcommunity.com/id/mrzozelow/"
                className="flex justify-between">
                <p>Steam:</p>
                <svg xmlns="http://www.w3.org/2000/svg"
                   width="16" height="16" fill="currentColor"
-                  className="size-[40px]" viewBox="0 0 16 16"
+                  className="text-gray-900 rounded-full size-[40px]" viewBox="0 0 16 16"
                >
                   <path d="M.329 10.333A8.01 8.01 0 0 0 7.99 16C12.414 16 16 12.418 16 8s-3.586-8-8.009-8A8.006
                   8.006 0 0 0 0 7.468l.003.006 4.304 1.769A2.2 2.2 0 0 1 5.62 8.88l1.96-2.844-.001-.04a3.046 3.046
