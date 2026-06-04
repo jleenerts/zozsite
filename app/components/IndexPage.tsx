@@ -26,8 +26,8 @@ export default function IndexClient() {
             alt="Logo designed by Zoz, a circular and stylized orange capital Z against a black background."
             className="landscape:h-3/5 portrait:w-4/5 w-min"
          />
-         <Link href={`./about`}
-               prefetch={true}
+         <Link href={`/about`}
+               prefetch={false}
                onNavigate={(e) => {
                   if (sidebar && footer) {
                      sidebar.hidden = false;
