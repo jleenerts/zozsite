@@ -22,6 +22,7 @@ export default function IndexClient() {
          <Image src="/zoz-logo-big.png"
             height={1024}
             width={1024}
+            loading={`eager`}
             alt="Logo designed by Zoz, a circular and stylized orange capital Z against a black background."
             className="landscape:h-3/5 portrait:w-4/5 w-min"
          />

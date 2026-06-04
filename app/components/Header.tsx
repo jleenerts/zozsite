@@ -108,6 +108,7 @@ export default function Header() {
                         <Image src="/zoz-logo-sm.png"
                            height={256}
                            width={256}
+                           loading={`eager`}
                            alt="Logo designed by Zoz, a circular and stylized orange capital Z against a black background."
                            className="w-10 pr-2"
                         />
