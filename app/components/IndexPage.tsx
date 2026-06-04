@@ -10,7 +10,7 @@ export default function IndexClient() {
 
    useEffect(() => {
       getSidebar(document?.getElementById('sidebarContainer'));
-      getFooter(document.getElementById('footer'));
+      getFooter(document?.getElementById('footer'));
 
       if (sidebar && footer) {
          sidebar.hidden = true;
