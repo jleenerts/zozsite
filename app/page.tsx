@@ -30,6 +30,7 @@ export default function HomePage() {
          <Link href={`./about`}
                prefetch={true}
                className={`mt-4 text-4xl`}
+               replace={true}
                onNavigate={(e) => {
                   if (sidebar && footer) {
                      sidebar.hidden = false;

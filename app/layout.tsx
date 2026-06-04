@@ -85,9 +85,9 @@ export default function RootLayout({
                ">
                   {children}
                </main>
+               <Header />
+               <Footer />
             </ThemeWrapper>
-            <Header />
-            <Footer />
          </body>
       </html>
    );
