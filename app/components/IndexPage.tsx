@@ -28,7 +28,6 @@ export default function IndexClient() {
          />
          <Link href={`./about`}
                prefetch={true}
-               replace={true}
                onNavigate={(e) => {
                   if (sidebar && footer) {
                      sidebar.hidden = false;
