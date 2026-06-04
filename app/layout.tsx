@@ -21,9 +21,10 @@ export const metadata: Metadata = {
       default: `Jacob's website - Mrzozelow.xyz`,
       template: `%s | Jacob's website`,
    },
-   description: "The personal website of Jacob Leenerts (known online as Mrzozelow), software developer and video game enthusiast.",
+   description: "The personal website of Jacob Leenerts (known online as Mrzozelow or simply Zoz), software dev and video game enthusiast.",
    applicationName: "Zoz Site",
    authors: [{name:"Jacob Leenerts"}],
+   creator: "Jacob Leenerts",
    keywords: [`Mrzozelow`, `Jacob Leenerts`, `Gaming`, `Web Development`],
    referrer: "origin-when-cross-origin",
    robots: {
@@ -85,9 +86,9 @@ export default function RootLayout({
                ">
                   {children}
                </main>
-               <Header />
-               <Footer />
             </ThemeWrapper>
+            <Header />
+            <Footer />
          </body>
       </html>
    );

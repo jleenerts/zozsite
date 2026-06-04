@@ -10,7 +10,7 @@ export default function ThemeWrapper({ children }: Readonly<{children: React.Rea
       setMounted(true);
    }, []);
 
-   if (!mounted) return null;
+   if (!mounted) return <div></div>;
 
-   return <>{children}</>;
+   return <div>{children}</div>;
 }
