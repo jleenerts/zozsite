@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata } from 'next';
 import IndexClient from './components/IndexPage';
  
 export const metadata: Metadata = {

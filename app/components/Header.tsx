@@ -77,6 +77,7 @@ export default function Header() {
    const navItems = [
       { href: "/about", label: "About Me" },
       { href: "/resume", label: "My Resume" },
+      { href: "/socials", label: "Socials" },
    ];
 
    // Note on the light icon: to match the bottom of a mobile browser where the height can change,
