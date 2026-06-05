@@ -8,7 +8,20 @@ export const metadata: Metadata = {
 export default function ResumePage() {
    return(
       <div>
-         <p>Text goes here</p>
+         <section id="summary" className="">
+            <div className="">
+               <h1>Jacob Leenerts</h1>
+            </div>
+         </section>
+         <section id="highlights" className="">
+
+         </section>
+         <section id="work-history" className="">
+            
+         </section>
+         <section id="projects" className="">
+
+         </section>
       </div>
    )
 }
