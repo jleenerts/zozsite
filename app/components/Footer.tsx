@@ -14,6 +14,7 @@ export default function Footer() {
                <svg xmlns="http://www.w3.org/2000/svg"
                   width="16" height="16" fill="currentColor"
                   className="ml-2 scale-150" viewBox="0 0 16 16"
+                  id="Github Logo"
                >
                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
                   0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01
@@ -29,6 +30,7 @@ export default function Footer() {
                <svg xmlns="http://www.w3.org/2000/svg"
                      width="16" height="16" fill="currentColor"
                      className="mr-1 scale-90" viewBox="0 0 16 16"
+                     id="Copyright Symbol"
                >
                      <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.146 4.992c-1.212 0-1.927.92-1.927
                      2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03

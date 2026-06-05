@@ -18,6 +18,7 @@ export default function SocialsPage() {
                <svg xmlns="http://www.w3.org/2000/svg"
                   width="16" height="16" fill="currentColor"
                   className="text-gray-900 rounded-full size-[40px]" viewBox="0 0 16 16"
+                  id="Steam Logo"
                >
                   <path d="M.329 10.333A8.01 8.01 0 0 0 7.99 16C12.414 16 16 12.418 16 8s-3.586-8-8.009-8A8.006
                   8.006 0 0 0 0 7.468l.003.006 4.304 1.769A2.2 2.2 0 0 1 5.62 8.88l1.96-2.844-.001-.04a3.046 3.046
@@ -35,6 +36,7 @@ export default function SocialsPage() {
                <svg xmlns="http://www.w3.org/2000/svg"
                   width="16" height="16" fill="currentColor"
                   className="text-blue-500 size-[40px]" viewBox="0 0 16 16"
+                  id="Bluesky Logo"
                >
                   <path d="M3.468 1.948C5.303 3.325 7.276 6.118 8 7.616c.725-1.498 2.698-4.29 4.532-5.668C13.855.955
                   16 .186 16 2.632c0 .489-.28 4.105-.444 4.692-.572 2.04-2.653 2.561-4.504 2.246 3.236.551 4.06 2.375
@@ -49,6 +51,7 @@ export default function SocialsPage() {
                <svg xmlns="http://www.w3.org/2000/svg"
                   width="16" height="16" fill="currentColor"
                   className="text-orange-500 size-[40px]" viewBox="0 0 16 16"
+                  id="Reddit Logo"
                >
                   <path d="M6.167 8a.83.83 0 0 0-.83.83c0 .459.372.84.83.831a.831.831 0 0 0 0-1.661m1.843 3.647c.315 0
                   1.403-.038 1.976-.611a.23.23 0 0 0 0-.306.213.213 0 0 0-.306 0c-.353.363-1.126.487-1.67.487-.545
