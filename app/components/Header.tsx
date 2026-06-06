@@ -102,7 +102,7 @@ export default function Header() {
                className="mr-1"
                >
                   <Link href="/about"
-                        className="flex justify-end pr-2
+                        className="flex justify-end items-center pr-2
                                     font-semibold text-orange-500 hover:text-orange-400"
                   >
                      <div>
