@@ -46,7 +46,7 @@ export default function ResumePage() {
                </div>
                <div className="flex flex-row 
                               w-1/2 xl:basis-1/4">
-                  <Image src="/jacob-forest-cropped.jpg"
+                  <Image src="/jacob-forest.jpg"
                            height={2316}
                            width={1656}
                            fill={false}
