@@ -24,25 +24,27 @@ export default function ResumePage() {
                               border-b-4 border-black/50 dark:border-white/50"
                >Software Developer</p>
             </div>
-            <div className="mt-2 flex flex-col xl:flex-row">
-               <div className="pr-4 flex flex-col justify-between xl:basis-3/4
+            <div className="mt-2 flex flex-col justify-center items-center xl:flex-row">
+               <div className="pr-4 flex flex-col xl:justify-between xl:basis-3/4
                               text-xl 2xl:text-2xl 1440p:text-4xl 4k:text-6xl">
                   
                   <p className="text-justify indent-[10%]">
                      Jacob is a dedicated developer interested in creating software that intuitively
                      works for its users & empowers people and businesses alike to achieve their goals.
                      He has a wide variety of experience & interest in web development as well as networking
-                     - working with APIs, databases, WebGL, and building with Vue/React web application frameworks.
+                     - working with APIs, databases, <code>WebGL</code>, and building websites
+                     with <code>Vue</code>/<code>React</code> web application frameworks. His interests span
+                     all of computing, with personal projects encompassing building & troubleshooting computer
+                     hardware as well as experiments with home networking/server deployment.
                   </p>
                   <p className="h-min-1/4 text-justify indent-[10%]">
                      Jacob works best in small teams or on solo projects, with an ability to research and
                      quickly pick up new skills to achieve tasks as needed. He has experience both working
                      on and leading teams of less than five people. He's a strong believer in
-                     open communication and honesty when it comes to team dynamics, both to strengthen personal
-                     relationships and prevent friction for work.
+                     open communication and blameless conflict/issue resolution.
                   </p>
                </div>
-               <div className="flex flex-col justify-center
+               <div className="flex flex-row 
                               w-1/2 xl:basis-1/4">
                   <Image src="/jacob-forest-cropped.jpg"
                            height={2316}
