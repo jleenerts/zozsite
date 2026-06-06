@@ -1,29 +1,23 @@
 'use client';
 
-import { useState, useEffect } from "react";
-
-import { PlayCircleIcon } from "@heroicons/react/24/outline";
+import { useState } from "react";
 
 export function DetailMenu({ className = "", title = "default", details = [] }:
    { className?: string, title?: string, details: Array<string> }) {
-   const [elm, getThis] = useState<HTMLElement | null>(null);
-
-   useEffect(() => {
-      getThis(document?.getElementById(`${title}`));
-      elm?.classList.toggle("sr-only");
-   });
+   const [open, setOpen] = useState(false);
 
    function handleClick() {
-      if (elm) {
-         elm.classList.toggle("sr-only");
-      }
+      setOpen(prev => !prev);
    }
+
    return (
       <div className={className}>
          <button onClick={handleClick} className="text-left p-2">
             <p>{title}</p>
          </button>
-         <div id={title} className="px-2">
+         <div id={title} className={`pl-2 transform duration-300 overflow-hidden min-h-content
+                                    ${open ? "max-h-content opacity-100 translate-y-0" : 
+                                             "max-h-0 opacity-0 -translate-y-4"}`}>
             <ul style={{listStyle:"inside"}}>
                {details.map((item, idx) => (
                   <li key={idx}>{item}</li>
