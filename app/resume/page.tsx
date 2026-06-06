@@ -99,9 +99,9 @@ export default function ResumePage() {
                                        "Alerts could be changed in sound and pitch, and different alert modes were created for testing."]}
                   />
                   <DetailMenu className="mt-2"
-                              title="Branding Associate / Creative Team Manager"
+                              title="Creative Team Manager"
                               subtitle="– Branditory"
-                              details={["Started as an associate, creating thousands of potential brand name and slogan recommendations for clients based on their needs and web domain availability.",
+                              details={["Started as a Branding Associate, creating thousands of potential brand name and slogan recommendations for clients based on their needs and web domain availability.",
                                        "Took over as team manager in June 2017 – communicated with clients via email and phone to get feedback, ask questions, and convert inquiries to paying customers.",
                                        "Managed a small team of 2-3 associates to ensure appropriate scheduling based on associate availability, communication of client needs towards associates, and answering questions regarding assigned work.",
                                        "Manually created/refunded orders for customers in special circumstances, and handled chargeback cases with relevant evidence."]}

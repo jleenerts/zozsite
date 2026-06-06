@@ -12,9 +12,9 @@ export function DetailMenu({ className = "", title = "default", subtitle="defaul
 
    return (
       <div className={className}>
-         <button onClick={handleClick} className="py-2 flex text-left items-center">
+         <button onClick={handleClick} className="py-2 flex justify-start text-left text-sm xl:text-xl items-center">
             <b>{title}</b>
-            <p className="pl-1 text-base">{subtitle}</p>
+            <p className="pl-1 text-sm xl:text-base">{subtitle}</p>
          </button>
          <div id={title} className={`transform duration-300 overflow-hidden
                                     ${open ? "max-h-content opacity-100 translate-y-0" : 
