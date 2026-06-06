@@ -10,12 +10,12 @@ export function DetailMenu({ className = "", title = "default", details = [] }:
 
    useEffect(() => {
       getThis(document?.getElementById(`${title}`));
-      elm?.classList.toggle("hidden");
+      elm?.classList.toggle("sr-only");
    });
 
    function handleClick() {
       if (elm) {
-         elm.classList.toggle("hidden");
+         elm.classList.toggle("sr-only");
       }
    }
    return (
@@ -23,7 +23,7 @@ export function DetailMenu({ className = "", title = "default", details = [] }:
          <button onClick={handleClick} className="text-left p-2">
             <p>{title}</p>
          </button>
-         <div id={title} className="p-2">
+         <div id={title} className="px-2">
             <ul style={{listStyle:"inside"}}>
                {details.map((item, idx) => (
                   <li key={idx}>{item}</li>

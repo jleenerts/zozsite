@@ -27,9 +27,8 @@ export default function ResumePage() {
                >Software Developer</p>
             </div>
             <div className="mt-2 flex flex-col items-center xl:flex-row">
-               <div className="pr-4 flex flex-col xl:justify-between xl:basis-3/4
+               <div className="pr-0 xl:pr-4 flex flex-col xl:justify-between xl:basis-3/4
                               text-xl 2xl:text-2xl 1440p:text-4xl 4k:text-6xl">
-                  
                   <p className="text-justify indent-[10%]">
                      Jacob is a dedicated developer interested in creating software that intuitively
                      works for its users & empowers people and businesses alike to achieve their goals.
@@ -61,23 +60,31 @@ export default function ResumePage() {
             </div>
             
          </section>
-         <section id="highlights" className="">
-
+         <section id="skills" className="pt-2 text-xl">
+         
          </section>
          <section id="work-history" className="pt-2 text-xl">
             <div className="flex items-center border-b-4 border-black/75 dark:border-white/75">
                <p>Job Experience</p>
                <p className="ml-1 text-sm">(Click for more)</p>
             </div>
-            <div className="grid grid-cols-2">
-               <DetailMenu className="mt-2 bg-red-500"
-                           title="AR Research Project"
-                           details={["Info 1", "Info 2", "Info 3"]}
-               />
-               <DetailMenu className="mt-2 bg-blue-500"
-                           title="Tutor/Reader (UCSC)"
-                           details={["Info 1", "Info 2", "Info 3"]}
-               />
+            <div id="jobs"className="flex flex-row w-full">
+               <div id="col1" className="basis-1/2">
+                  <DetailMenu className="mt-2"
+                              title="Fast & Loose Band Website"
+                              details={["Info 1", "Info 2", "Info 3"]}
+                  />
+               </div>
+               <div id="col2" className="basis-1/2">
+                  <DetailMenu className="mt-2"
+                              title="AR Research Project"
+                              details={["Info 1", "Info 2", "Info 3"]}
+                  />
+                  <DetailMenu className="mt-2"
+                              title="Tutor/Reader (UCSC)"
+                              details={["Info 1", "Info 2", "Info 3"]}
+                  />
+               </div>
             </div>
          </section>
          <section id="projects" className="">
