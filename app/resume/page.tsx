@@ -16,7 +16,7 @@ const ibmPlexThai = IBM_Plex_Sans_Thai_Looped({
 
 export default function ResumePage() {
    return(
-      <div className={`${ibmPlexThai.className}`}>
+      <div className={`${ibmPlexThai.className} text-base`}>
          <section id="summary" className="">
             <div>
                <h1 className="text-3xl">Jacob Leenerts</h1>
@@ -25,8 +25,8 @@ export default function ResumePage() {
                >Software Developer</p>
             </div>
             <div className="mt-2 flex flex-col xl:flex-row">
-               <div className="pr-4 flex flex-col xl:basis-3/4
-                              text-xl 2xl:text-2xl">
+               <div className="pr-4 flex flex-col justify-between xl:basis-3/4
+                              text-xl 2xl:text-2xl 1440p:text-4xl 4k:text-6xl">
                   
                   <p className="text-justify indent-[10%]">
                      Jacob is a dedicated developer interested in creating software that intuitively
