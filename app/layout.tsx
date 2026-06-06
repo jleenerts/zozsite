@@ -79,7 +79,7 @@ export default function RootLayout({
          >
             <ThemeWrapper>
                <main className="
-                     mx-auto portrait:mx-2 pt-12 lg:pt-5 pb-12 xl:max-w-3/5 xl:min-w-sm
+                     mx-4 xl:mx-auto pt-12 lg:pt-5 pb-12 xl:max-w-3/5 xl:min-w-sm
                      flex flex-col justify-center
                      whitespace-pre-line
                      duration-300

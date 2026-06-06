@@ -45,7 +45,7 @@ export default function ResumePage() {
                      open communication as well as blameless conflict/issue resolution.
                   </p>
                </div>
-               <div className="flex flex-row 
+               <div className="flex flex-row xl:flex-col
                               w-1/2 xl:basis-1/4">
                   <Image src="/jacob-forest.jpg"
                            height={2316}
@@ -68,20 +68,30 @@ export default function ResumePage() {
                <p>Job Experience</p>
                <p className="ml-1 text-sm">(Click for more)</p>
             </div>
-            <div id="jobs"className="flex flex-row w-full">
+            <div id="jobs"className="flex flex-col lg:flex-row w-full">
                <div id="col1" className="basis-1/2">
                   <DetailMenu className="mt-2"
                               title="Fast & Loose Band Website"
+                              details={["Commissioned to design and deploy a blog and informational website for a local band",
+                                       "Created a password-protected admin portal for creating and deleting posts with corresponding database",
+                                       "Deployed website to NameCheap hosting service using Next.js and configured MySQL DB"]}
+                  />
+                  <DetailMenu className="mt-2"
+                              title="Tutor/Reader - UCSC"
                               details={["Info 1", "Info 2", "Info 3"]}
                   />
                </div>
-               <div id="col2" className="basis-1/2">
+               <div id="col2" className="basis-1/2 lg:ml-3">
                   <DetailMenu className="mt-2"
                               title="AR Research Project"
-                              details={["Info 1", "Info 2", "Info 3"]}
+                              details={["Worked under Alex Pang to create a prototype Meta Quest 3 app to provide spatial awareness to Visually Impaired People",
+                                       "Created a Unity project from scratch using Meta APIs that alerts the user to nearby objects with sound queues",
+                                       "Jacob designed the sound alert system, managing multiple audio sources.",
+                                       "Created short looping alert sounds that were user toggleable for rapid prototyping.",
+                                       "Alerts could be changed in sound and pitch, and different alert modes were created for testing."]}
                   />
                   <DetailMenu className="mt-2"
-                              title="Tutor/Reader (UCSC)"
+                              title="Creative Team Lead - Branditory"
                               details={["Info 1", "Info 2", "Info 3"]}
                   />
                </div>
