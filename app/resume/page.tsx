@@ -24,7 +24,7 @@ export default function ResumePage() {
                               border-b-4 border-black/50 dark:border-white/50"
                >Software Developer</p>
             </div>
-            <div className="mt-2 flex flex-col justify-center items-center xl:flex-row">
+            <div className="mt-2 flex flex-col items-center xl:flex-row">
                <div className="pr-4 flex flex-col xl:justify-between xl:basis-3/4
                               text-xl 2xl:text-2xl 1440p:text-4xl 4k:text-6xl">
                   
@@ -32,8 +32,8 @@ export default function ResumePage() {
                      Jacob is a dedicated developer interested in creating software that intuitively
                      works for its users & empowers people and businesses alike to achieve their goals.
                      He has a wide variety of experience & interest in web development as well as networking
-                     - working with APIs, databases, <code>WebGL</code>, and building websites
-                     with <code>Vue</code>/<code>React</code> web application frameworks. His interests span
+                     - working with APIs, databases, WebGL, and building websites
+                     with Vue/React web application frameworks. His interests span
                      all of computing, with personal projects encompassing building & troubleshooting computer
                      hardware as well as experiments with home networking/server deployment.
                   </p>
@@ -53,7 +53,7 @@ export default function ResumePage() {
                            loading={`eager`}
                            alt="A selfie I took at the UCSC campus, while on a forest bridge.
                                  I am half-shaded and behind me is foliage with tall trees."
-                           className="self-center"
+                           className=""
                   />
                </div>
             </div>
