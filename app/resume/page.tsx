@@ -72,27 +72,39 @@ export default function ResumePage() {
                <div id="col1" className="basis-1/2">
                   <DetailMenu className="mt-2"
                               title="Fast & Loose Band Website"
-                              details={["Commissioned to design and deploy a blog and informational website for a local band",
-                                       "Created a password-protected admin portal for creating and deleting posts with corresponding database",
-                                       "Deployed website to NameCheap hosting service using Next.js and configured MySQL DB"]}
+                              subtitle="– Commission work"
+                              details={["Designed a blog and informational website for a local band with newspost functionality.",
+                                       "Created a password-protected admin portal for creating and deleting posts with corresponding database.",
+                                       "Deployed website to NameCheap hosting service using Next.js and configured MySQL DB."]}
                   />
                   <DetailMenu className="mt-2"
-                              title="Tutor/Reader - UCSC"
-                              details={["Info 1", "Info 2", "Info 3"]}
+                              title="Tutor/Reader"
+                              subtitle="– UC Santa Cruz"
+                              details={["Graded 100+ students' work for two consecutive quarters for Introductory Networking.",
+                                 "Communicated with TAs and the professor regarding grading clarifications and addressed cheating via plagiarism.",
+                                 "Tutored for Intro to Graphics class in Spring Quarter in both group and individual capacities.",
+                                 "Ran an introductory seminar and created a text guide on how to use git and GitHub for students to host their web-based projects for grading.",
+                                 "Assisted students in debugging and optimizing JavaScript and WebGL code for their projects.",
+                                 "Taught students about WebGL fundamentals for rendering primitive shapes, interleaving data to make multiple WebGL calls at once, and implementing basic lighting in their 3D worlds."]}
                   />
                </div>
                <div id="col2" className="basis-1/2 lg:ml-3">
                   <DetailMenu className="mt-2"
                               title="AR Research Project"
-                              details={["Worked under Alex Pang to create a prototype Meta Quest 3 app to provide spatial awareness to Visually Impaired People",
-                                       "Created a Unity project from scratch using Meta APIs that alerts the user to nearby objects with sound queues",
+                              subtitle="– UC Santa Cruz"
+                              details={["Worked under Alex Pang to create a prototype Meta Quest 3 app to provide spatial awareness to Visually Impaired People.",
+                                       "Created a Unity project from scratch using Meta APIs that alerts the user to nearby objects with sound queues.",
                                        "Jacob designed the sound alert system, managing multiple audio sources.",
                                        "Created short looping alert sounds that were user toggleable for rapid prototyping.",
                                        "Alerts could be changed in sound and pitch, and different alert modes were created for testing."]}
                   />
                   <DetailMenu className="mt-2"
-                              title="Creative Team Lead - Branditory"
-                              details={["Info 1", "Info 2", "Info 3"]}
+                              title="Branding Associate / Creative Team Manager"
+                              subtitle="– Branditory"
+                              details={["Started as an associate, creating thousands of potential brand name and slogan recommendations for clients based on their needs and web domain availability.",
+                                       "Took over as team manager in June 2017 – communicated with clients via email and phone to get feedback, ask questions, and convert inquiries to paying customers.",
+                                       "Managed a small team of 2-3 associates to ensure appropriate scheduling based on associate availability, communication of client needs towards associates, and answering questions regarding assigned work.",
+                                       "Manually created/refunded orders for customers in special circumstances, and handled chargeback cases with relevant evidence."]}
                   />
                </div>
             </div>
