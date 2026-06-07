@@ -115,7 +115,7 @@ export default function ResumePage() {
          <section id="work-history" className="pt-2 text-xl">
             <div className="flex items-center border-b-4 border-black/75 dark:border-white/75">
                <b>Job Experience</b>
-               <p className="ml-1 text-sm">(Click for more)</p>
+               <p className="ml-1 text-sm">(Click/tap for more)</p>
             </div>
             <div id="jobs"className="flex flex-col lg:flex-row w-full">
                <div id="col1" className="basis-1/2">
