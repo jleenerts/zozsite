@@ -32,7 +32,7 @@ export default function ResumePage() {
                   <p className="text-justify indent-[10%]">
                      Jacob is a dedicated developer interested in creating software that intuitively
                      works for its users & empowers people and businesses alike to achieve their goals.
-                     He has a spectrum of experience & interest in web development as well as networking
+                     He has a spectrum of experience in software development as well as networking
                      - working with APIs, databases, WebGL, and building websites
                      with Vue/React web application frameworks. His interests span
                      all of computing, with personal projects encompassing building & troubleshooting computer
@@ -61,7 +61,22 @@ export default function ResumePage() {
             
          </section>
          <section id="skills" className="pt-2 text-xl">
-         
+            <div className="flex items-center border-b-4 border-black/75 dark:border-white/75">
+               <p>Highlighted Skills</p>
+            </div>
+            <ul className="mt-1 grid grid-cols-3 place-content-around justify-items-center-safe
+                           *:transition *:hover:scale-120 *:duration-150 *:ease-out"
+               style={{listStyle:"inside"}}>
+               <li>Next.js + React</li>
+               <li>Raw CSS & Tailwind CSS</li>
+               <li>MySQL</li>
+               <li>WebGL</li>
+               <li>Python 3</li>
+               <li>C++</li>
+               <li>C# (Unity)</li>
+               <li>Linux</li>
+               <li>Version Control (Git)</li>
+            </ul>
          </section>
          <section id="work-history" className="pt-2 text-xl">
             <div className="flex items-center border-b-4 border-black/75 dark:border-white/75">
@@ -102,7 +117,7 @@ export default function ResumePage() {
                               title="Creative Team Manager"
                               subtitle="– Branditory"
                               details={["Started as a Branding Associate, creating thousands of potential brand name and slogan recommendations for clients based on their needs and web domain availability.",
-                                       "Took over as team manager in June 2017 – communicated with clients via email and phone to get feedback, ask questions, and convert inquiries to paying customers.",
+                                       "Took over as team manager after two years – communicated with clients via email and phone to get feedback, ask questions, and convert inquiries to paying customers.",
                                        "Managed a small team of 2-3 associates to ensure appropriate scheduling based on associate availability, communication of client needs towards associates, and answering questions regarding assigned work.",
                                        "Manually created/refunded orders for customers in special circumstances, and handled chargeback cases with relevant evidence."]}
                   />
