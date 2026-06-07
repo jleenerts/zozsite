@@ -40,17 +40,19 @@ export default function ResumePage() {
                      - working with APIs, databases, WebGL, and building websites
                      with Vue/React web application frameworks. His interests span
                      all of computing, with personal projects encompassing building & troubleshooting computer
-                     hardware as well as experiments with home networking/server deployment.
+                     hardware as well as experiments with home networking/server deployment. Jacob's
+                     jack-of-all-trades adeptitude will provide you adaptability and the ability to
+                     achieve a wide variety of tasks.
                   </p>
                   <p className="h-min-1/4 text-justify indent-[10%]">
                      Jacob works best in small teams or on solo projects, with an ability to research and
                      quickly pick up new skills to achieve tasks as needed. He has experience both working
                      on and leading small teams of &lt; 5 people. He's a strong believer in
-                     open communication as well as blameless conflict/issue resolution.
+                     open communication as well as blameless conflict/issue resolution to achieve
+                     stronger team cohesion.
                   </p>
                </div>
-               <div className="flex flex-row xl:flex-col
-                              w-1/2 xl:basis-1/5">
+               <div className="pt-2 xl:pt-0 w-1/2 xl:basis-1/5">
                   <Image src="/jacob-forest.jpg"
                            height={2316}
                            width={1656}
@@ -64,12 +66,12 @@ export default function ResumePage() {
             </div>
             
          </section>
-         <section id="skills" className="pt-2 text-xl">
+         <section id="skills" className="pt-4 text-base xl:text-lg *:text-center">
             <div className="flex items-center border-b-4 border-black/75 dark:border-white/75">
-               <b>Highlighted Skills</b>
+               <b className="text-lg xl:text-xl">Highlighted Skills</b>
             </div>
-            <div className="pt-4 flex justify-center items-center">
-               <b>Languages</b>
+            <div className="pt-3 xl:text-xl flex justify-center items-center">
+               <b className="border-b-2 rounded-sm">Languages</b>
             </div>
             <ul className="grid grid-cols-3 *:my-2 place-content-around justify-items-center-safe
                            text-sm xl:text-lg *:transition *:hover:scale-120 *:duration-150 *:ease-out"
@@ -81,8 +83,8 @@ export default function ResumePage() {
                <li>C++</li>
                <li>C# (Unity)</li>
             </ul>
-            <div className="pt-4 flex justify-center items-center">
-               <b>Frameworks</b>
+            <div className="pt-2 xl:text-xl flex justify-center items-center">
+               <b className="border-b-2 rounded-sm">Frameworks</b>
             </div>
             <ul className="grid grid-cols-3 *:my-2 place-content-around justify-items-center-safe
                            text-sm xl:text-lg *:transition *:hover:scale-120 *:duration-150 *:ease-out"
@@ -91,8 +93,8 @@ export default function ResumePage() {
                <li>Vue</li>
                <li>py4web</li>
             </ul>
-            <div className="pt-4 flex justify-center items-center">
-               <b>Libraries</b>
+            <div className="pt-2 xl:text-xl flex justify-center items-center">
+               <b className="border-b-2 rounded-sm">Libraries</b>
             </div>
             <ul className="grid grid-cols-3 *:my-2 place-content-around justify-items-center-safe
                            text-sm xl:text-lg *:transition *:hover:scale-120 *:duration-150 *:ease-out"
@@ -103,23 +105,23 @@ export default function ResumePage() {
                <li>Three.js</li>
                <li>Firebase (DB)</li>
             </ul>
-            <div className="pt-4 flex justify-center items-center">
-               <b>Other Skills</b>
+            <div className="pt-2 xl:text-xl flex justify-center items-center">
+               <b className="border-b-2 rounded-sm">Other Skills</b>
             </div>
             <ul className="grid grid-cols-3 *:my-2 place-content-around justify-items-center-safe
                            text-sm xl:text-lg *:transition *:hover:scale-120 *:duration-150 *:ease-out"
             >
                <li>Version Control (Git)</li>
                <li>API & Framework Docs Research</li>
-               <li>Linux Proficient</li>
+               <li>Linux Proficiency</li>
                <li>Package Managers</li>
                <li>Networking (Configuration & DHCP)</li>
             </ul>
          </section>
-         <section id="work-history" className="pt-6 text-xl">
+         <section id="work-history" className="pt-2 text-base xl:text-lg">
             <div className="flex items-center border-b-4 border-black/75 dark:border-white/75">
-               <b>Job Experience</b>
-               <p className="ml-1 text-sm">(Click/tap each item for more)</p>
+               <b className="text-lg xl:text-xl">Job Experience</b>
+               <p className="ml-1 text-sm">(Click/tap jobs for more info)</p>
             </div>
             <div id="jobs"className="flex flex-col lg:flex-row w-full">
                <div id="col1" className="basis-1/2">
@@ -162,9 +164,9 @@ export default function ResumePage() {
                </div>
             </div>
          </section>
-         <section id="education" className="pt-5 text-base xl:text-lg">
+         <section id="education" className="pt-4 text-base xl:text-lg">
             <div className="flex items-center border-b-4 border-black/75 dark:border-white/75">
-               <b>Education</b>
+               <b className="text-lg xl:text-xl">Education</b>
             </div>
             <div className="mt-2 flex flex-col xl:flex-row">
                <b>Computer Science B.A –</b>
