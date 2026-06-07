@@ -12,7 +12,8 @@ export function DetailMenu({ className = "", title = "default", subtitle="defaul
 
    return (
       <div className={className}>
-         <button onClick={handleClick} className="flex justify-start text-left text-base xl:text-lg items-center">
+         <button onClick={handleClick} className="flex justify-start hover:cursor-pointer
+                                                   text-left text-base xl:text-lg items-center">
             <b>{title}</b>
             <p className="pl-1 text-sm xl:text-base">{subtitle}</p>
          </button>
