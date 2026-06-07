@@ -38,7 +38,13 @@ export default function AboutPage() {
             </div>
             <div>
                <p className="indent-[10%]">
-                  Gamer
+                  A nerd through and through! I've been immersed in technology for my whole life. I probably ended
+                  up obsessed with video games because they encompass every type of media wrapped into one product.
+                  Other than tech, I am also an audio nerd. Although I'm not one of those audiophiles constantly
+                  chasing the best audio signals, I <b>love</b> music and have a huge collection of physical media.
+                  I like getting physical media of any of my favorites, but music in particular is the largest
+                  segment of the collection. Anytime I'm not listening to something, my brain usually plays a track
+                  in my head anyway.
                </p>
             </div>
          </section>
@@ -46,10 +52,26 @@ export default function AboutPage() {
             <div className="flex justify-center text-2xl xl:text-3xl">
                <p>Gaming</p>
             </div>
-            <div>
+            <div className="flex flex-col justify-center place-items-center">
                <p className="indent-[10%]">
-                  Gamer
+                  I play a variety of games and am into almost every type of game! The genres I'm into most
+                  are arcade racers, rhythm games, and card games. My favorite studio is Remedy Games,
+                  they are making the best story-driven games of any studio and their art style mingling
+                  live footage with gameplay is unrivaled! Some of my favorites:
                </p>
+               <ul className="flex flex-col place-items-center">
+                  <li>Alan Wake 2</li>
+                  <li>Dead as Disco</li>
+                  <li>Brütal Legend</li>
+                  <li>Boneworks</li>
+                  <li>Bomb Rush Cyberfunk</li>
+                  <li>Deus Ex</li>
+                  <li>Slipstream</li>
+                  <li>Pizza Tower</li>
+                  <li>The World Ends With You</li>
+                  <li>Super Monkey Ball 1 & 2</li>
+                  <li>Slay the Spire</li>
+               </ul>
             </div>
          </section>
       </div>
