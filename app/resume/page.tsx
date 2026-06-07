@@ -162,6 +162,14 @@ export default function ResumePage() {
             <div className="flex items-center border-b-4 border-black/75 dark:border-white/75">
                <b>Education</b>
             </div>
+            <div className="mt-2 flex">
+               <b>Computer Science B.A –</b>
+               <p className="ml-1">UC Santa Cruz, 2024</p>
+            </div>
+            <div className="mt-1 flex">
+               <b>C++ & Python Certificates –</b>
+               <p className="ml-1">Orange Coast College, 2021</p>
+            </div>
          </section>
       </div>
    )
