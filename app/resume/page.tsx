@@ -44,16 +44,15 @@ export default function ResumePage() {
                      - working with APIs, databases, WebGL, and building websites
                      with Vue/React web application frameworks. His interests span
                      all of computing, with personal projects encompassing building & troubleshooting computer
-                     hardware as well as experiments with home networking/server deployment. Jacob's
-                     jack-of-all-trades adeptitude will provide you adaptability and the ability to
-                     achieve a wide variety of tasks.
+                     hardware as well as experiments with home networking/private server deployment. 
                   </p>
                   <p className="text-justify indent-[10%]">
                      Jacob works best in small teams or on solo projects, with an ability to research and
                      quickly pick up new skills to achieve tasks as needed. He has experience both working
                      on and leading small teams of &lt; 5 people. He's a strong believer in
                      open communication as well as blameless conflict/issue resolution to achieve
-                     stronger team cohesion.
+                     stronger team cohesion & confidence. Jacob's jack-of-all-trades adeptitude
+                     will provide you adaptability and the ability to achieve a wide variety of tasks.
                   </p>
                </div>
                <div className="pt-2 xl:pt-0 w-1/2 xl:basis-1/5">
