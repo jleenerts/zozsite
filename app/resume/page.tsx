@@ -24,15 +24,19 @@ export default function ResumePage() {
                <h1 className="text-3xl">Jacob Leenerts</h1>
             </div>
             <div className="text-lg xl:text-xl flex flex-col xl:flex-row justify-between pb-1
-                              border-b-4 border-black/75 dark:border-white/75">
+                              border-b-4 border-black/75 dark:border-white/75"
+            >
                <p>Software Developer</p>
-               <a  href="mailto:jacobleenerts97+jobs@gmail.com?subject=Resume%20Inquiry"
-                  className={`hover:text-blue-600 active:text-blue-600 visited:text-violet-700`}>
-                  Email: jacobleenerts97@gmail.com</a>
+               <a  href="mailto:jacobleenerts97+jobs@gmail.com?subject=Job%20Inquiry"
+                  className="hover:text-blue-600 active:text-blue-600 visited:text-violet-700"
+               >
+                  Email: jacobleenerts97@gmail.com
+               </a>
             </div>
             <div className="mt-2 flex flex-col items-center xl:items-start xl:flex-row">
                <div className="pr-0 xl:pr-4 flex flex-col xl:justify-between xl:basis-4/5
-                              text-base xl:text-xl">
+                              text-base xl:text-xl"
+               >
                   <p className="text-justify indent-[10%]">
                      Jacob is a dedicated developer interested in creating software that intuitively
                      works for its users & empowers people and businesses alike to achieve their goals.
@@ -44,7 +48,7 @@ export default function ResumePage() {
                      jack-of-all-trades adeptitude will provide you adaptability and the ability to
                      achieve a wide variety of tasks.
                   </p>
-                  <p className="h-min-1/4 text-justify indent-[10%]">
+                  <p className="text-justify indent-[10%]">
                      Jacob works best in small teams or on solo projects, with an ability to research and
                      quickly pick up new skills to achieve tasks as needed. He has experience both working
                      on and leading small teams of &lt; 5 people. He's a strong believer in
@@ -60,7 +64,6 @@ export default function ResumePage() {
                            loading={`eager`}
                            alt="A selfie I took at the UCSC campus, while on a forest bridge.
                                  I am half-shaded and behind me is foliage with tall trees."
-                           className=""
                   />
                </div>
             </div>
