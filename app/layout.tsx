@@ -75,7 +75,7 @@ export default function RootLayout({
          </head>
          <body
             className={`${goldman.className}
-                     antialiased h-dvh dark:bg-black dark:text-gray-100 xl:text-2xl z-0`}
+                     antialiased h-dvh dark:bg-black dark:text-gray-100 text-xl xl:text-2xl z-0`}
             suppressHydrationWarning
          >
             <ThemeWrapper>
