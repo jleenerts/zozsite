@@ -26,14 +26,31 @@ export default function AboutPage() {
                I built this site for two main reasons: one, because I think it's cool to build websites.
                Two, because I wanted a repository for any personal and professional efforts. This year I
                wanted to finally make something for myself, so I created a logo in Inkscape and built
-               this site using Next.js. While I always found myself interested in creative projects,
-               I've never really felt like I had much in terms of the arts (more of a science-y type).
+               this site using Next.js & Tailwind CSS. While I always found myself interested in creative projects,
+               I've never really felt like I had much going in terms of the arts (more of a science-y type).
                So, while I needed to make something to show off, I also wanted to try and inject it with
                more of a personal style (not just some stuffy corporate crap).
             </p>
          </section>
-         <section id="gaming" className="text-justify indent-[10%]">
-            <p>Section 1</p>
+         <section id="aboutme" className="text-justify">
+            <div className="flex justify-center text-2xl xl:text-3xl">
+               <p>About me</p>
+            </div>
+            <div>
+               <p className="indent-[10%]">
+                  Gamer
+               </p>
+            </div>
+         </section>
+         <section id="gaming" className="text-justify">
+            <div className="flex justify-center text-2xl xl:text-3xl">
+               <p>Gaming</p>
+            </div>
+            <div>
+               <p className="indent-[10%]">
+                  Gamer
+               </p>
+            </div>
          </section>
       </div>
    );
