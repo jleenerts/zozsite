@@ -119,6 +119,7 @@ export default function ResumePage() {
                <li>Linux Proficiency</li>
                <li>Package Managers</li>
                <li>Networking (Configuration & DHCP)</li>
+               <li>cPanel</li>
             </ul>
          </section>
          <section id="work-history" className="pt-2 text-base xl:text-lg">
