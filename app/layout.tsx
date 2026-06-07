@@ -25,7 +25,8 @@ export const metadata: Metadata = {
    applicationName: "Zoz Site",
    authors: [{name:"Jacob Leenerts"}],
    creator: "Jacob Leenerts",
-   keywords: [`Mrzozelow`, `Jacob Leenerts`, `Gaming`, `Web Development`],
+   keywords: [`mrzozelow`, `mrzozelow.xyz`, `jacob leenerts`, `gaming`, `coding`,
+               `web development`, `personal site`],
    referrer: "origin-when-cross-origin",
    robots: {
       index: true,

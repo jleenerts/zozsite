@@ -62,25 +62,59 @@ export default function ResumePage() {
          </section>
          <section id="skills" className="pt-2 text-xl">
             <div className="flex items-center border-b-4 border-black/75 dark:border-white/75">
-               <p>Highlighted Skills</p>
+               <b>Highlighted Skills</b>
+            </div>
+            <div className="pt-3 flex justify-center items-center">
+               <b>Languages</b>
             </div>
             <ul className="mt-1 grid grid-cols-3 place-content-around justify-items-center-safe
-                           *:transition *:hover:scale-120 *:duration-150 *:ease-out"
+                           text-lg *:transition *:hover:scale-120 *:duration-150 *:ease-out"
                style={{listStyle:"inside"}}>
-               <li>Next.js + React</li>
-               <li>Raw CSS & Tailwind CSS</li>
-               <li>MySQL</li>
+               <li>JavaScript</li>
+               <li>CSS</li>
                <li>WebGL</li>
                <li>Python 3</li>
                <li>C++</li>
                <li>C# (Unity)</li>
-               <li>Linux</li>
+            </ul>
+            <div className="pt-2 flex justify-center items-center">
+               <b>Frameworks</b>
+            </div>
+            <ul className="mt-1 grid grid-cols-3 place-content-around justify-items-center-safe
+                           text-lg *:transition *:hover:scale-120 *:duration-150 *:ease-out"
+               style={{listStyle:"inside"}}>
+               <li>Next.js + React</li>
                <li>Version Control (Git)</li>
+               <li>Vue</li>
+            </ul>
+            <div className="pt-2 flex justify-center items-center">
+               <b>Libraries</b>
+            </div>
+            <ul className="mt-1 grid grid-cols-3 place-content-around justify-items-center-safe
+                           text-lg *:transition *:hover:scale-120 *:duration-150 *:ease-out"
+               style={{listStyle:"inside"}}>
+               <li>Tailwind CSS</li>
+               <li>NextAuth.js</li>
+               <li>LeafletJS</li>
+               <li>Three.js</li>
+               <li>Firebase (DB)</li>
+            </ul>
+            <div className="pt-2 flex justify-center items-center">
+               <b>Other Skills</b>
+            </div>
+            <ul className="mt-1 grid grid-cols-3 place-content-around justify-items-center-safe
+                           text-lg *:transition *:hover:scale-120 *:duration-150 *:ease-out"
+               style={{listStyle:"inside"}}>
+               <li>Version Control (Git)</li>
+               <li>API & Framework Docs Research</li>
+               <li>Linux</li>
+               <li>Package Managers</li>
+               <li>Networking (Configuration & DHCP)</li>
             </ul>
          </section>
          <section id="work-history" className="pt-2 text-xl">
             <div className="flex items-center border-b-4 border-black/75 dark:border-white/75">
-               <p>Job Experience</p>
+               <b>Job Experience</b>
                <p className="ml-1 text-sm">(Click for more)</p>
             </div>
             <div id="jobs"className="flex flex-col lg:flex-row w-full">
@@ -124,8 +158,10 @@ export default function ResumePage() {
                </div>
             </div>
          </section>
-         <section id="projects" className="">
-
+         <section id="education" className="pt-2 text-xl">
+            <div className="flex items-center border-b-4 border-black/75 dark:border-white/75">
+               <b>Education</b>
+            </div>
          </section>
       </div>
    )
