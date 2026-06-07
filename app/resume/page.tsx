@@ -22,13 +22,13 @@ export default function ResumePage() {
          <section id="summary" className="">
             <div>
                <h1 className="text-3xl">Jacob Leenerts</h1>
-               <p className="text-2xl pb-1
+               <p className="text-xl pb-1
                               border-b-4 border-black/75 dark:border-white/75"
                >Software Developer</p>
             </div>
-            <div className="mt-2 flex flex-col items-center xl:flex-row">
-               <div className="pr-0 xl:pr-4 flex flex-col xl:justify-between xl:basis-3/4
-                              text-xl 2xl:text-2xl 1440p:text-4xl 4k:text-6xl">
+            <div className="mt-2 flex flex-col items-center xl:items-start xl:flex-row">
+               <div className="pr-0 xl:pr-4 flex flex-col xl:justify-between xl:basis-4/5
+                              text-base xl:text-xl">
                   <p className="text-justify indent-[10%]">
                      Jacob is a dedicated developer interested in creating software that intuitively
                      works for its users & empowers people and businesses alike to achieve their goals.
@@ -46,7 +46,7 @@ export default function ResumePage() {
                   </p>
                </div>
                <div className="flex flex-row xl:flex-col
-                              w-1/2 xl:basis-1/4">
+                              w-1/2 xl:basis-1/5">
                   <Image src="/jacob-forest.jpg"
                            height={2316}
                            width={1656}
@@ -68,7 +68,7 @@ export default function ResumePage() {
                <b>Languages</b>
             </div>
             <ul className="mt-1 grid grid-cols-3 place-content-around justify-items-center-safe
-                           text-lg *:transition *:hover:scale-120 *:duration-150 *:ease-out"
+                           text-sm xl:text-lg *:transition *:hover:scale-120 *:duration-150 *:ease-out"
                style={{listStyle:"inside"}}>
                <li>JavaScript</li>
                <li>CSS</li>
@@ -81,17 +81,17 @@ export default function ResumePage() {
                <b>Frameworks</b>
             </div>
             <ul className="mt-1 grid grid-cols-3 place-content-around justify-items-center-safe
-                           text-lg *:transition *:hover:scale-120 *:duration-150 *:ease-out"
+                           text-sm xl:text-lg *:transition *:hover:scale-120 *:duration-150 *:ease-out"
                style={{listStyle:"inside"}}>
                <li>Next.js + React</li>
-               <li>Version Control (Git)</li>
                <li>Vue</li>
+               <li>py4web</li>
             </ul>
             <div className="pt-2 flex justify-center items-center">
                <b>Libraries</b>
             </div>
             <ul className="mt-1 grid grid-cols-3 place-content-around justify-items-center-safe
-                           text-lg *:transition *:hover:scale-120 *:duration-150 *:ease-out"
+                           text-sm xl:text-lg *:transition *:hover:scale-120 *:duration-150 *:ease-out"
                style={{listStyle:"inside"}}>
                <li>Tailwind CSS</li>
                <li>NextAuth.js</li>
@@ -103,7 +103,7 @@ export default function ResumePage() {
                <b>Other Skills</b>
             </div>
             <ul className="mt-1 grid grid-cols-3 place-content-around justify-items-center-safe
-                           text-lg *:transition *:hover:scale-120 *:duration-150 *:ease-out"
+                           text-sm xl:text-lg *:transition *:hover:scale-120 *:duration-150 *:ease-out"
                style={{listStyle:"inside"}}>
                <li>Version Control (Git)</li>
                <li>API & Framework Docs Research</li>
