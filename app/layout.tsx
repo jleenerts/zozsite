@@ -75,14 +75,14 @@ export default function RootLayout({
          </head>
          <body
             className={`${goldman.className}
-                     antialiased h-dvh dark:bg-black dark:text-gray-100 z-0`}
+                     antialiased h-dvh dark:bg-black dark:text-gray-100 xl:text-2xl z-0`}
             suppressHydrationWarning
          >
             <ThemeWrapper>
                <main className="
                      mx-4 xl:mx-auto pt-12 lg:pt-5 pb-12 xl:max-w-3/5 xl:min-w-sm
                      flex flex-col justify-center
-                     whitespace-pre-line xl:text-xl
+                     whitespace-pre-line
                      duration-300
                ">
                   {children}
