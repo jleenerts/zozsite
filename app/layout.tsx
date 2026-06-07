@@ -19,7 +19,7 @@ const goldman = Goldman({
 export const metadata: Metadata = {
    title: {
       default: `Jacob's website - Mrzozelow.xyz`,
-      template: `%s | Jacob's website`,
+      template: `%s | Mrzozelow.xyz`,
    },
    description: "The personal website of Jacob Leenerts (known online as Mrzozelow or simply Zoz), software dev and video game enthusiast.",
    applicationName: "Zoz Site",

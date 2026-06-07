@@ -22,9 +22,13 @@ export default function ResumePage() {
          <section id="summary" className="">
             <div>
                <h1 className="text-3xl">Jacob Leenerts</h1>
-               <p className="text-xl pb-1
-                              border-b-4 border-black/75 dark:border-white/75"
-               >Software Developer</p>
+            </div>
+            <div className="text-lg xl:text-xl flex flex-col xl:flex-row justify-between pb-1
+                              border-b-4 border-black/75 dark:border-white/75">
+               <p>Software Developer</p>
+               <a  href="mailto:jacobleenerts97+jobs@gmail.com?subject=Resume%20Inquiry"
+                  className={`hover:text-blue-600 active:text-blue-600 visited:text-violet-700`}>
+                  Email: jacobleenerts97@gmail.com</a>
             </div>
             <div className="mt-2 flex flex-col items-center xl:items-start xl:flex-row">
                <div className="pr-0 xl:pr-4 flex flex-col xl:justify-between xl:basis-4/5
@@ -64,12 +68,12 @@ export default function ResumePage() {
             <div className="flex items-center border-b-4 border-black/75 dark:border-white/75">
                <b>Highlighted Skills</b>
             </div>
-            <div className="pt-3 flex justify-center items-center">
+            <div className="pt-4 flex justify-center items-center">
                <b>Languages</b>
             </div>
-            <ul className="mt-1 grid grid-cols-3 place-content-around justify-items-center-safe
+            <ul className="grid grid-cols-3 *:my-2 place-content-around justify-items-center-safe
                            text-sm xl:text-lg *:transition *:hover:scale-120 *:duration-150 *:ease-out"
-               style={{listStyle:"inside"}}>
+            >
                <li>JavaScript</li>
                <li>CSS</li>
                <li>WebGL</li>
@@ -77,45 +81,45 @@ export default function ResumePage() {
                <li>C++</li>
                <li>C# (Unity)</li>
             </ul>
-            <div className="pt-2 flex justify-center items-center">
+            <div className="pt-4 flex justify-center items-center">
                <b>Frameworks</b>
             </div>
-            <ul className="mt-1 grid grid-cols-3 place-content-around justify-items-center-safe
+            <ul className="grid grid-cols-3 *:my-2 place-content-around justify-items-center-safe
                            text-sm xl:text-lg *:transition *:hover:scale-120 *:duration-150 *:ease-out"
-               style={{listStyle:"inside"}}>
+            >
                <li>Next.js + React</li>
                <li>Vue</li>
                <li>py4web</li>
             </ul>
-            <div className="pt-2 flex justify-center items-center">
+            <div className="pt-4 flex justify-center items-center">
                <b>Libraries</b>
             </div>
-            <ul className="mt-1 grid grid-cols-3 place-content-around justify-items-center-safe
+            <ul className="grid grid-cols-3 *:my-2 place-content-around justify-items-center-safe
                            text-sm xl:text-lg *:transition *:hover:scale-120 *:duration-150 *:ease-out"
-               style={{listStyle:"inside"}}>
+            >
                <li>Tailwind CSS</li>
                <li>NextAuth.js</li>
                <li>LeafletJS</li>
                <li>Three.js</li>
                <li>Firebase (DB)</li>
             </ul>
-            <div className="pt-2 flex justify-center items-center">
+            <div className="pt-4 flex justify-center items-center">
                <b>Other Skills</b>
             </div>
-            <ul className="mt-1 grid grid-cols-3 place-content-around justify-items-center-safe
+            <ul className="grid grid-cols-3 *:my-2 place-content-around justify-items-center-safe
                            text-sm xl:text-lg *:transition *:hover:scale-120 *:duration-150 *:ease-out"
-               style={{listStyle:"inside"}}>
+            >
                <li>Version Control (Git)</li>
                <li>API & Framework Docs Research</li>
-               <li>Linux</li>
+               <li>Linux Proficient</li>
                <li>Package Managers</li>
                <li>Networking (Configuration & DHCP)</li>
             </ul>
          </section>
-         <section id="work-history" className="pt-2 text-xl">
+         <section id="work-history" className="pt-6 text-xl">
             <div className="flex items-center border-b-4 border-black/75 dark:border-white/75">
                <b>Job Experience</b>
-               <p className="ml-1 text-sm">(Click/tap for more)</p>
+               <p className="ml-1 text-sm">(Click/tap each item for more)</p>
             </div>
             <div id="jobs"className="flex flex-col lg:flex-row w-full">
                <div id="col1" className="basis-1/2">
@@ -158,17 +162,17 @@ export default function ResumePage() {
                </div>
             </div>
          </section>
-         <section id="education" className="pt-2 text-xl">
+         <section id="education" className="pt-5 text-base xl:text-lg">
             <div className="flex items-center border-b-4 border-black/75 dark:border-white/75">
                <b>Education</b>
             </div>
-            <div className="mt-2 flex">
+            <div className="mt-2 flex flex-col xl:flex-row">
                <b>Computer Science B.A –</b>
-               <p className="ml-1">UC Santa Cruz, 2024</p>
+               <p className="ml-1 text-sm xl:text-lg">UC Santa Cruz, 2024</p>
             </div>
-            <div className="mt-1 flex">
+            <div className="mt-1 flex flex-col xl:flex-row">
                <b>C++ & Python Certificates –</b>
-               <p className="ml-1">Orange Coast College, 2021</p>
+               <p className="ml-1 text-sm xl:text-lg">Orange Coast College, 2021</p>
             </div>
          </section>
       </div>
