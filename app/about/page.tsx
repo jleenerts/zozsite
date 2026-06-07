@@ -18,7 +18,7 @@ export default function AboutPage() {
                         alt="The Zoz logo, a stylized orange Z on a black background."
                />
             </div>
-            <p>Welcome to my website!</p>
+            <p className="mt-2">Welcome to my website!</p>
          </section>
          <section id="summary" className="text-justify indent-[10%]">
             <p>
@@ -43,8 +43,23 @@ export default function AboutPage() {
                   Other than tech, I am also an audio nerd. Although I'm not one of those audiophiles constantly
                   chasing the best audio signals, I <b>love</b> music and have a huge collection of physical media.
                   I like getting physical media of any of my favorites, but music in particular is the largest
-                  segment of the collection. Anytime I'm not listening to something, my brain usually plays a track
-                  in my head anyway.
+                  segment of the collection. If I'm not listening to something, my brain fills the space with more
+                  music!
+               </p>
+               <p className="indent-[10%]">
+                  Aside from hobbies, I also take great interest in the cross-section between ethics and technology.
+                  Unfortunately, it seems like the tech industry doesn't really care about how their products are
+                  used. It's my personal opinion that everyone should be questioning whether or not the tech products
+                  they use daily are improving their lives or chaining them to services that are not healthy for them.
+               </p>
+               <p className="indent-[10%]">
+                  Also, since it's the hottest thing around right now, I'll put it bluntly: generative AI fucking sucks! 
+                  Not only is it actually driving people insane, it's copyright fraud at massive scale and data centers
+                  being built for genAI are causing measurable harm to the communities around them! It honestly kinda
+                  drives me crazy that people don't seem to care or understand the fundamental problems with it. The
+                  people running the AI companies have also successfully marketed their crap products to encompass the
+                  term, meaning that all the actual cool shit being done with machine learning and AI have been swallowed
+                  by bullshit lies. So if you're an AI booster, don't hmu ;)
                </p>
             </div>
          </section>
@@ -63,6 +78,7 @@ export default function AboutPage() {
                   <li>Alan Wake 2</li>
                   <li>Dead as Disco</li>
                   <li>Brütal Legend</li>
+                  <li>Metroid: Zero Mission</li>
                   <li>Boneworks</li>
                   <li>Bomb Rush Cyberfunk</li>
                   <li>Deus Ex</li>
