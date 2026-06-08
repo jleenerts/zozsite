@@ -36,9 +36,9 @@ export default function AboutPage() {
             <div className="flex justify-center text-2xl xl:text-3xl">
                <p>About me</p>
             </div>
-            <div>
-               <p className="indent-[10%]">
-                  A nerd through and through! I've been immersed in technology for my whole life. I probably ended
+            <div className="*:indent-[10%]">
+               <p>
+                  I'm a nerd through and through! I've been immersed in technology for my whole life. I probably ended
                   up obsessed with video games because they encompass every type of media wrapped into one product.
                   Other than tech, I am also an audio nerd. Although I'm not one of those audiophiles constantly
                   chasing the best audio signals, I <b>love</b> music and have a huge collection of physical media.
@@ -46,13 +46,13 @@ export default function AboutPage() {
                   segment of the collection. If I'm not listening to something, my brain fills the space with more
                   music!
                </p>
-               <p className="indent-[10%]">
+               <p>
                   Aside from hobbies, I also take great interest in the cross-section between ethics and technology.
                   Unfortunately, it seems like the tech industry doesn't really care about how their products are
                   used. It's my personal opinion that everyone should be questioning whether or not the tech products
                   they use daily are improving their lives or chaining them to services that are not healthy for them.
                </p>
-               <p className="indent-[10%]">
+               <p>
                   Also, since it's the hottest thing around right now, I'll put it bluntly: generative AI fucking sucks! 
                   Not only is it actually driving people insane, it's copyright fraud at massive scale and data centers
                   being built for genAI are causing measurable harm to the communities around them! It honestly kinda
