@@ -130,17 +130,17 @@ export default function ResumePage() {
                <div id="col1" className="basis-1/2">
                   <DetailMenu className="mt-2"
                               title="Fast & Loose Band Website"
-                              subtitle="– Commission work"
+                              subtitle="– Commission work (2026)"
                               details={["Designed a blog and informational website for a local band with newspost functionality.",
                                        "Created a password-protected admin portal for creating and deleting posts with corresponding database.",
                                        "Deployed website to NameCheap hosting service using Next.js and configured MySQL DB."]}
                   />
                   <DetailMenu className="mt-2"
                               title="Tutor/Reader"
-                              subtitle="– UC Santa Cruz"
+                              subtitle="– UC Santa Cruz (2023 - 2024)"
                               details={["Graded 100+ students' work for two consecutive quarters for Introductory Networking.",
                                  "Communicated with TAs and the professor regarding grading clarifications and addressed cheating via plagiarism.",
-                                 "Tutored for Intro to Graphics class in Spring Quarter in both group and individual capacities.",
+                                 "Tutored for Intro to Graphics class during Spring Quarter in both group and individual capacities.",
                                  "Ran an introductory seminar and created a text guide on how to use git and GitHub for students to host their web-based projects for grading.",
                                  "Assisted students in debugging and optimizing JavaScript and WebGL code for their projects.",
                                  "Taught students about WebGL fundamentals for rendering primitive shapes, interleaving data to make multiple WebGL calls at once, and implementing basic lighting in their 3D worlds."]}
@@ -149,7 +149,7 @@ export default function ResumePage() {
                <div id="col2" className="basis-1/2 lg:ml-3">
                   <DetailMenu className="mt-2"
                               title="AR Research Project"
-                              subtitle="– UC Santa Cruz"
+                              subtitle="– UC Santa Cruz (2024)"
                               details={["Worked under Alex Pang to create a prototype Meta Quest 3 app to provide spatial awareness to Visually Impaired People.",
                                        "Created a Unity project from scratch using Meta APIs that alerts the user to nearby objects with sound queues.",
                                        "Jacob designed the sound alert system, managing multiple audio sources.",
@@ -158,7 +158,7 @@ export default function ResumePage() {
                   />
                   <DetailMenu className="mt-2"
                               title="Creative Team Manager"
-                              subtitle="– Branditory"
+                              subtitle="– Branditory (2015 - 2019)"
                               details={["Started as a Branding Associate, creating thousands of potential brand name and slogan recommendations for clients based on their needs and web domain availability.",
                                        "Took over as team manager after two years – communicated with clients via email and phone to get feedback, ask questions, and convert inquiries to paying customers.",
                                        "Managed a small team of 2-3 associates to ensure appropriate scheduling based on associate availability, communication of client needs towards associates, and answering questions regarding assigned work.",

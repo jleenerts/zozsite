@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Footer() {
    return (
       <div id="footer"
-            className="mt-4 p-2 border-t-2 fixed w-screen bottom-0 z-05
+            className="mt-4 px-2 xl:px-6 p-2 border-t-2 fixed w-screen bottom-0 z-05
                         flex justify-between
                         text-black text-sm lg:text-md 
                         bg-orange-500"
