@@ -23,12 +23,12 @@ export default function ResumePage() {
             <div>
                <h1 className="text-3xl">Jacob Leenerts</h1>
             </div>
-            <div className="text-lg xl:text-xl flex flex-col xl:flex-row justify-between pb-1
-                              border-b-4 border-black/75 dark:border-white/75"
+            <div className="text-lg xl:text-xl flex flex-col xl:flex-row content-center justify-between
+                              text-slate-500 dark:text-slate-400 border-b-3 border-black/75 dark:border-white/75"
             >
                <p>Software Developer</p>
                <a  href="mailto:jacobleenerts97+jobs@gmail.com?subject=Job%20Inquiry"
-                  className="hover:text-blue-600 active:text-blue-600 visited:text-violet-700"
+                  className="hover:text-sky-500 active:text-sky-500 visited:text-violet-700"
                >
                   Email: jacobleenerts97@gmail.com
                </a>
@@ -69,11 +69,15 @@ export default function ResumePage() {
             
          </section>
          <section id="skills" className="pt-4 text-base xl:text-lg *:text-center">
-            <div className="flex items-center border-b-4 border-black/75 dark:border-white/75">
-               <b className="text-lg xl:text-xl">Highlighted Skills</b>
+            <div className="flex items-center border-b-3">
+               <b className="text-slate-500 dark:text-slate-400 text-lg xl:text-xl">Highlighted Skills</b>
             </div>
             <div className="pt-3 xl:text-xl flex justify-center items-center">
-               <b className="border-b-2 rounded-sm">Languages</b>
+               <b className="text-slate-500 dark:text-slate-400
+                              border-black dark:border-white border-b-2 rounded-sm"
+               >
+                  Languages
+               </b>
             </div>
             <ul className="grid grid-cols-3 *:my-2 place-content-around justify-items-center-safe
                            text-sm xl:text-lg *:transition *:hover:scale-120 *:duration-150 *:ease-out"
@@ -86,7 +90,11 @@ export default function ResumePage() {
                <li>C# (Unity)</li>
             </ul>
             <div className="pt-2 xl:text-xl flex justify-center items-center">
-               <b className="border-b-2 rounded-sm">Frameworks</b>
+               <b className="text-slate-500 dark:text-slate-400
+                              border-black dark:border-white border-b-2 rounded-sm"
+               >
+                  Frameworks
+               </b>
             </div>
             <ul className="grid grid-cols-3 *:my-2 place-content-around justify-items-center-safe
                            text-sm xl:text-lg *:transition *:hover:scale-120 *:duration-150 *:ease-out"
@@ -96,7 +104,11 @@ export default function ResumePage() {
                <li>py4web</li>
             </ul>
             <div className="pt-2 xl:text-xl flex justify-center items-center">
-               <b className="border-b-2 rounded-sm">Libraries</b>
+               <b className="text-slate-500 dark:text-slate-400
+                              border-black dark:border-white border-b-2 rounded-sm"
+               >
+                  Libraries
+               </b>
             </div>
             <ul className="grid grid-cols-3 *:my-2 place-content-around justify-items-center-safe
                            text-sm xl:text-lg *:transition *:hover:scale-120 *:duration-150 *:ease-out"
@@ -108,7 +120,11 @@ export default function ResumePage() {
                <li>Firebase (DB)</li>
             </ul>
             <div className="pt-2 xl:text-xl flex justify-center items-center">
-               <b className="border-b-2 rounded-sm">Other Skills</b>
+               <b className="text-slate-500 dark:text-slate-400
+                              border-black dark:border-white border-b-2 rounded-sm"
+               >
+                  Other Skills
+               </b>
             </div>
             <ul className="grid grid-cols-3 *:my-2 place-content-around justify-items-center-safe
                            text-sm xl:text-lg *:transition *:hover:scale-120 *:duration-150 *:ease-out"
@@ -122,8 +138,8 @@ export default function ResumePage() {
             </ul>
          </section>
          <section id="work-history" className="pt-2 text-base xl:text-lg">
-            <div className="flex items-center border-b-4 border-black/75 dark:border-white/75">
-               <b className="text-lg xl:text-xl">Job Experience</b>
+            <div className="flex items-center border-b-3 border-black/75 dark:border-white/75">
+               <b className="text-slate-500 dark:text-slate-400 text-lg xl:text-xl">Job Experience</b>
                <p className="ml-1 text-sm">(Click/tap jobs for more info)</p>
             </div>
             <div id="jobs"className="flex flex-col lg:flex-row w-full">
@@ -168,8 +184,8 @@ export default function ResumePage() {
             </div>
          </section>
          <section id="education" className="pt-4 text-base xl:text-lg">
-            <div className="flex items-center border-b-4 border-black/75 dark:border-white/75">
-               <b className="text-lg xl:text-xl">Education</b>
+            <div className="flex items-center border-b-3 border-black/75 dark:border-white/75">
+               <b className="text-slate-500 dark:text-slate-400 text-lg xl:text-xl">Education</b>
             </div>
             <div className="mt-2 flex flex-col xl:flex-row">
                <b>Computer Science B.A –</b>
