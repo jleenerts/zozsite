@@ -40,16 +40,16 @@ jobs:
           echo "manager=pnpm" >> $GITHUB_OUTPUT
           echo "command=ci" >> $GITHUB_OUTPUT
           echo "runner=pnpx --no-install" >> $GITHUB_OUTPUT
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: "24"
-          cache: ${{ steps.detect-package-manager.outputs.manager }}
       - name: Setup pnpm
         uses: pnpm/action-setup@v6
         with:
           version: 10
           cache: true
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: ${{ steps.detect-package-manager.outputs.manager }}
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
