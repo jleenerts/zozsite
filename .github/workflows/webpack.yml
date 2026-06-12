@@ -21,9 +21,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Add webpack CLI
-        run: pnpm install -D webpack-cli
-
       - name: Build
         run: |
+          pnpm install -D webpack-cli
           pnpx webpack
