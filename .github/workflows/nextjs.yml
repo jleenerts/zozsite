@@ -39,7 +39,7 @@ jobs:
         run: |
           echo "manager=pnpm" >> $GITHUB_OUTPUT
           echo "command=install" >> $GITHUB_OUTPUT
-          echo "runner=pnpx --no-install" >> $GITHUB_OUTPUT
+          echo "runner=pnpx" >> $GITHUB_OUTPUT
       - name: Setup pnpm
         uses: pnpm/action-setup@v6
         with:
@@ -71,7 +71,7 @@ jobs:
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Next.js
-        run: pnpx run build
+        run: ${{ steps.detect-package-manager.outputs.runner }} next build --no-install
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
