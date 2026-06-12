@@ -2,8 +2,8 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: `Jacob's Resume`,
-  description: `Check out my coding projects & experience, from web apps to AR experimental research!`,
+  title: `Home Page`,
+  description: `Learn more about Zoz & the website.`,
 }
 
 export default function AboutPage() {
