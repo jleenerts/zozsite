@@ -24,4 +24,4 @@ jobs:
       - name: Build
         run: |
           pnpm install -D webpack-cli
-          pnpx webpack
+          pnpx webpack --env.NODE_ENV=production
