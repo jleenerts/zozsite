@@ -52,15 +52,6 @@ export default function AboutPage() {
                   used. It's my personal opinion that everyone should be questioning whether or not the tech products
                   they use daily are improving their lives or chaining them to services that are not healthy for them.
                </p>
-               <p>
-                  Also, since it's the hottest thing around right now, I'll put it bluntly: generative AI fucking sucks! 
-                  Not only is it actually driving people insane, it's copyright fraud at massive scale and data centers
-                  being built for genAI are causing measurable harm to the communities around them! It honestly kinda
-                  drives me crazy that people don't seem to care or understand the fundamental problems with it. The
-                  people running the AI companies have also successfully marketed their crap products to encompass the
-                  term, meaning that all the actual cool shit being done with machine learning and AI have been swallowed
-                  by bullshit lies. So if you're an AI booster, don't hmu ;)
-               </p>
             </div>
          </section>
          <section id="gaming" className="text-justify">
