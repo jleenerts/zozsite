@@ -19,7 +19,7 @@ export function DetailMenu({ className = "", title = "default", subtitle="defaul
                                     ${open ? "max-h-content opacity-100 translate-y-0" : 
                                              "max-h-0 opacity-0 -translate-y-4"}`}
          >
-            <ul style={{listStyle:"inside"}} className="text-sm text-justify">
+            <ul style={{listStyle:"inside"}} className="text-sm">
                {details.map((item, idx) => (
                   <li key={idx}>{item}</li>
                ))}
