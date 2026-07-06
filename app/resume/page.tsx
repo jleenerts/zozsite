@@ -19,20 +19,14 @@ const ibmPlexThai = IBM_Plex_Sans_Thai_Looped({
 export default function ResumePage() {
    return(
       <div className={`${ibmPlexThai.className} text-base`}>
-         <section id="summary" className="">
-            <div>
-               
-            </div>
+         <section id="summary">
             <div className="flex flex-col xl:flex-row content-center justify-between
                               border-b-3 border-black/75 dark:border-white/75">
-               <div className="flex flex-col content-center justify-between"
-               >
+               <div className="flex flex-col content-center justify-between">
                   <p className="text-2xl xl:text-3xl">Jacob Leenerts</p>
                   <p className="text-xl xl:text-2xl text-slate-500 dark:text-slate-400">Software Engineer/Developer</p>
                </div>
-               <div className="text-sm xl:text-base flex flex-col
-                                 "
-               >
+               <div className="text-sm xl:text-base flex flex-col xl:*:text-end">
                   <p>Orange County, California</p>
                   <a  href="tel:1-831-508-9262"
                      className="hover:underline active:underline
