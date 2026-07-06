@@ -40,8 +40,7 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# public folder to be removed later
-/public
-
 NextJS-README.md
 old-index.html
+
+app/resume/offline/*
