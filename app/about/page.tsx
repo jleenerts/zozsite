@@ -43,14 +43,14 @@ export default function AboutPage() {
                   Other than tech, I am also an audio nerd. Although I'm not one of those audiophiles constantly
                   chasing the best audio signals, I <b>love</b> music and have a huge collection of physical media.
                   I like getting physical media of any of my favorites, but music in particular is the largest
-                  segment of the collection. If I'm not listening to something, my brain fills the space with more
-                  music!
+                  segment of the collection.
                </p>
                <p>
                   Aside from hobbies, I also take great interest in the cross-section between ethics and technology.
-                  Unfortunately, it seems like the tech industry doesn't really care about how their products are
-                  used. It's my personal opinion that everyone should be questioning whether or not the tech products
-                  they use daily are improving their lives or chaining them to services that are not healthy for them.
+                  Unfortunately, it seems like the major tech companies aren't really interested in analyzing
+                  whether or not they are making useful contributions to society - only if it is profitable.
+                  It's my personal opinion that everyone should be questioning whether or not the tech products
+                  they use daily are improving their lives or chaining them to services that are not valuable to them.
                </p>
             </div>
          </section>
@@ -60,24 +60,25 @@ export default function AboutPage() {
             </div>
             <div className="flex flex-col justify-center place-items-center">
                <p className="indent-[10%]">
-                  I play a variety of games and am into almost every type of game! The genres I'm into most
-                  are arcade racers, rhythm games, and card games. My favorite studio is Remedy Games,
+                  I play a variety of games and am into almost every genre! The genres I'm into most
+                  are arcade racers, rhythm games, and card games, but I tend to prefer stylish games with great
+                  music, visuals, and/or narrative. My favorite studio is Remedy Games,
                   they are making the best story-driven games of any studio and their art style mingling
-                  live footage with gameplay is unrivaled! Some of my favorites:
+                  live footage with gameplay is unrivaled! Some of my favorites (in no particular order):
                </p>
                <ul className="flex flex-col place-items-center">
                   <li>Alan Wake 2</li>
                   <li>Dead as Disco</li>
+                  <li>Pizza Tower</li>
                   <li>Brütal Legend</li>
-                  <li>Metroid: Zero Mission</li>
                   <li>Boneworks</li>
-                  <li>Bomb Rush Cyberfunk</li>
                   <li>Deus Ex</li>
                   <li>Slipstream</li>
-                  <li>Pizza Tower</li>
+                  <li>Bomb Rush Cyberfunk</li>
                   <li>The World Ends With You</li>
                   <li>Super Monkey Ball 1 & 2</li>
                   <li>Slay the Spire</li>
+                  <li>Metroid: Zero Mission</li>
                </ul>
             </div>
          </section>
