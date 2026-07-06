@@ -23,10 +23,13 @@ export default function ResumePage() {
             <div>
                <h1 className="text-3xl">Jacob Leenerts</h1>
             </div>
+            <div>
+               <h1>Orange County, California</h1>
+            </div>
             <div className="text-lg xl:text-xl flex flex-col xl:flex-row content-center justify-between
                               text-slate-500 dark:text-slate-400 border-b-3 border-black/75 dark:border-white/75"
             >
-               <p>Software Developer</p>
+               <p>Software Engineer/Developer</p>
                <a  href="mailto:jacobleenerts97+jobs@gmail.com?subject=Job%20Inquiry"
                   className="hover:text-sky-500 active:text-sky-500 visited:text-violet-700"
                >
