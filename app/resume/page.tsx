@@ -21,20 +21,34 @@ export default function ResumePage() {
       <div className={`${ibmPlexThai.className} text-base`}>
          <section id="summary" className="">
             <div>
-               <h1 className="text-3xl">Jacob Leenerts</h1>
+               
             </div>
-            <div>
-               <h1>Orange County, California</h1>
-            </div>
-            <div className="text-lg xl:text-xl flex flex-col xl:flex-row content-center justify-between
-                              text-slate-500 dark:text-slate-400 border-b-3 border-black/75 dark:border-white/75"
-            >
-               <p>Software Engineer/Developer</p>
-               <a  href="mailto:jacobleenerts97+jobs@gmail.com?subject=Job%20Inquiry"
-                  className="hover:text-sky-500 active:text-sky-500 visited:text-violet-700"
+            <div className="flex flex-col xl:flex-row content-center justify-between
+                              border-b-3 border-black/75 dark:border-white/75">
+               <div className="flex flex-col content-center justify-between"
                >
-                  Email: jacobleenerts97@gmail.com
-               </a>
+                  <p className="text-2xl xl:text-3xl">Jacob Leenerts</p>
+                  <p className="text-xl xl:text-2xl text-slate-500 dark:text-slate-400">Software Engineer/Developer</p>
+               </div>
+               <div className="text-sm xl:text-base flex flex-col
+                                 "
+               >
+                  <p>Orange County, California</p>
+                  <a  href="tel:1-831-508-9262"
+                     className="hover:underline active:underline
+                                 hover:text-slate-500 active:text-slate-500
+                                 dark:hover:text-slate-400 dark:active:text-slate-400"
+                  >
+                     Phone: (831) 508-9262
+                  </a>
+                  <a  href="mailto:jacobleenerts97+jobs@gmail.com?subject=Job%20Inquiry"
+                     className="hover:underline active:underline
+                                 hover:text-slate-500 active:text-slate-500
+                                 dark:hover:text-slate-400 dark:active:text-slate-400"
+                  >
+                     Email: jacobleenerts97@gmail.com
+                  </a>
+               </div>
             </div>
             <div className="mt-2 flex flex-col items-center xl:items-start xl:flex-row">
                <div className="pr-0 xl:pr-4 flex flex-col xl:justify-between xl:basis-4/5
