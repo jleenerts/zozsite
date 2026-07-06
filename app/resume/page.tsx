@@ -83,14 +83,14 @@ export default function ResumePage() {
             <div className="flex items-center border-b-3">
                <b className="text-slate-500 dark:text-slate-400 text-lg xl:text-xl">Highlighted Skills</b>
             </div>
-            <div className="pt-3 xl:text-xl flex justify-center items-center">
+            <div className="pt-2 xl:text-xl flex justify-center items-center">
                <b className="text-slate-500 dark:text-slate-400
                               border-black dark:border-white border-b-2 rounded-sm"
                >
                   Languages
                </b>
             </div>
-            <ul className="grid grid-cols-3 *:my-2 place-content-around justify-items-center-safe
+            <ul className="grid grid-cols-3 *:mt-1 place-content-around justify-items-center-safe
                            text-sm xl:text-lg *:transition *:hover:scale-120 *:duration-150 *:ease-out"
             >
                <li>JavaScript</li>
@@ -107,7 +107,7 @@ export default function ResumePage() {
                   Frameworks
                </b>
             </div>
-            <ul className="grid grid-cols-3 *:my-2 place-content-around justify-items-center-safe
+            <ul className="grid grid-cols-3 *:mt-1 place-content-around justify-items-center-safe
                            text-sm xl:text-lg *:transition *:hover:scale-120 *:duration-150 *:ease-out"
             >
                <li>Next.js + React</li>
@@ -121,7 +121,7 @@ export default function ResumePage() {
                   Libraries
                </b>
             </div>
-            <ul className="grid grid-cols-3 *:my-2 place-content-around justify-items-center-safe
+            <ul className="grid grid-cols-3 *:mt-1 place-content-around justify-items-center-safe
                            text-sm xl:text-lg *:transition *:hover:scale-120 *:duration-150 *:ease-out"
             >
                <li>Tailwind CSS</li>
@@ -137,7 +137,7 @@ export default function ResumePage() {
                   Other Skills
                </b>
             </div>
-            <ul className="grid grid-cols-3 *:my-2 place-content-around justify-items-center-safe
+            <ul className="grid grid-cols-3 *:mt-1 place-content-around justify-items-center-safe
                            text-sm xl:text-lg *:transition *:hover:scale-120 *:duration-150 *:ease-out"
             >
                <li>Version Control (Git)</li>
@@ -157,14 +157,14 @@ export default function ResumePage() {
                <div id="col1" className="basis-1/2">
                   <DetailMenu className="mt-2"
                               title="Fast & Loose Band Website"
-                              subtitle="– Commission work (2026)"
+                              subtitle="Commission work (2026)"
                               details={["Designed a blog and informational website for a local band with newspost functionality.",
                                        "Created a password-protected admin portal for creating and deleting posts with corresponding database.",
                                        "Deployed website to NameCheap hosting service using Next.js and configured MySQL DB."]}
                   />
                   <DetailMenu className="mt-2"
                               title="Tutor/Reader"
-                              subtitle="– UC Santa Cruz (2023 - 2024)"
+                              subtitle="UC Santa Cruz (2023 - 2024)"
                               details={["Graded 100+ students' work for two consecutive quarters for Introductory Networking.",
                                  "Communicated with TAs and the professor regarding grading clarifications and addressed cheating via plagiarism.",
                                  "Tutored for Intro to Graphics class during Spring Quarter in both group and individual capacities.",
@@ -176,7 +176,7 @@ export default function ResumePage() {
                <div id="col2" className="basis-1/2 lg:ml-3">
                   <DetailMenu className="mt-2"
                               title="AR Research Project"
-                              subtitle="– UC Santa Cruz (2024)"
+                              subtitle="UC Santa Cruz (2024)"
                               details={["Worked under Alex Pang to create a prototype Meta Quest 3 app to provide spatial awareness to Visually Impaired People.",
                                        "Created a Unity project from scratch using Meta APIs that alerts the user to nearby objects with sound queues.",
                                        "Jacob designed the sound alert system, managing multiple audio sources.",
@@ -185,7 +185,7 @@ export default function ResumePage() {
                   />
                   <DetailMenu className="mt-2"
                               title="Creative Team Manager"
-                              subtitle="– Branditory (2015 - 2019)"
+                              subtitle="Branditory (2015 - 2019)"
                               details={["Started as a Branding Associate, creating thousands of potential brand name and slogan recommendations for clients based on their needs and web domain availability.",
                                        "Took over as team manager after two years – communicated with clients via email and phone to get feedback, ask questions, and convert inquiries to paying customers.",
                                        "Managed a small team of 2-3 associates to ensure appropriate scheduling based on associate availability, communication of client needs towards associates, and answering questions regarding assigned work.",
@@ -199,12 +199,10 @@ export default function ResumePage() {
                <b className="text-slate-500 dark:text-slate-400 text-lg xl:text-xl">Education</b>
             </div>
             <div className="mt-2 flex flex-col xl:flex-row">
-               <b>Computer Science B.A –</b>
-               <p className="ml-1 text-sm xl:text-lg">UC Santa Cruz, 2024</p>
+               <p className="text-sm xl:text-lg"><b>Computer Science B.A –</b> UC Santa Cruz, 2024</p>
             </div>
-            <div className="mt-1 flex flex-col xl:flex-row">
-               <b>C++ & Python Certificates –</b>
-               <p className="ml-1 text-sm xl:text-lg">Orange Coast College, 2021</p>
+            <div className="mt-1 flex flex-row">
+               <p className="text-sm xl:text-lg"><b>C++ & Python Certificates –</b> Orange Coast College, 2021</p>
             </div>
          </section>
       </div>
